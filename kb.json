@@ -1,0 +1,56 @@
+[
+  {
+    "question": "What is product license key for deployment manager (dm)?",
+    "answer": "<br>PRLM77"
+  },
+  {
+    "question": "Cockpit username and password?",
+    "answer": "<br>admin / admin"
+  },
+  {
+    "question": "What is the Cockpit URL?",
+    "answer": "<br>https://<hostname>:8443/cockpit"
+  },
+  {
+    "question": "Deployment Manager license error: <br>DM license does not support BLE communication with the Tag",
+    "answer": "<br>Error: Tag's configuration information cannot be retrieved. <br>The DM license does not support BLE communication with the Tag.<br><br><b>Resolution:</b><br><br>1. Open Deployment Manager (DM).<br>2. Click the Gear icon in the top-right corner.<br>3. Select Product Key from the menu.<br>4. When prompted, enter the product key PERF2197.<br>5. Verify the status shows 'Active Product Key' with a valid date.<br><br>Once activated, Deployment Manager will support managing tags using TED and BLE."
+  },  
+  {
+    "question": "TED pairing code",
+    "answer": "<br>TED pairing code is 123456"
+  },
+  
+  {
+    "question": "Ubuntu view and edit network connections. Use this instead of cockpit",
+    "answer": "<br>Sudo nmtui"
+  },
+  
+  {
+    "question": "Show the MV ALE shortcut commands",
+    "answer": "<br>Refer to the shortcut command reference below.",
+	"images": ["shortcuts_mv_ale.png"]	
+  },
+
+  {
+    "question": "How to RMA",
+    "answer": "<br>On the ticket, click \"Change to RMA\".<br><br>Pick Product Solutions Returned – RTLS or Patient Security (based on product).<br><br>Set RMA Type to Unk unless you know the correct value.<br><br>Assign the ticket to the RTLS Sales Operation queue for RTLS.<br><br>For Patient Security, assign to the appropriate Sales Ops group (WG, Arial, etc.)."
+  },  
+
+  {
+    "question": "License Key for HM – Hardware Manager License",
+    "answer": "<br>Tag Manager License Key: SHKT4393",
+	"images": ["hw_manager_license_key.png"]	
+  },
+  
+  {
+	  "question": "Batch Reporting Tool for log file<br>",
+	  "answer": "<br><strong>Windows System Report (MobileView) — Batch Tool</strong><br><br><strong>What this captures</strong><br><br>• MobileView logs and Apache logs<br>• Windows Event Logs (System, Application, etc.)<br>• Installed programs, running tasks, and startup items<br>• Firewall rules, IP configuration, and netstat snapshot<br>• Windows Update history<br>• AeroScout ProgramData/AppData artifacts (e.g., Instant Notifier, client logs)<br>• Hostname and timestamp included in the output filename for clear identification<br><br><strong>Location of the tool</strong><br>On the MobileView server:<br>&lt;MobileView Install Dir&gt;\\tools\\TSO_PSO\\Windows System Report\\<br><br><strong>File name</strong><br>WindowsSystemReport.bat<br><br><strong>Internal Engineer Procedure (demo for staff)</strong><br>1. Log into the MobileView server (RDP or console) with administrator rights.<br>2. Browse to:&nbsp;&nbsp;&lt;MobileView&gt;\\tools\\TSO_PSO\\Windows System Report\\<br>3. Right-click <em>WindowsSystemReport.bat</em> and select <em>Run as administrator</em>.<br>4. Wait while the tool collects logs and creates a ZIP file.<br>5. Locate the output ZIP file on the Desktop.<br>6. File naming format:&nbsp;&nbsp;HOSTNAME_logs_v1.8_YYYYMMDD_HHMM.zip<br>7. Upload the ZIP file to the support ticket.<br><br><strong>Customer-Facing Instructions (copy/paste)</strong><br><strong>Subject:</strong> MobileView — Windows System Report (log collection)<br><br>Hi,<br><br>Please run the built-in Windows System Report tool on your MobileView server and upload the results:<br><br>1. Sign into the MobileView server using an administrator account.<br>2. Navigate to the following folder:<br>&nbsp;&nbsp;&lt;MobileView&gt;\\tools\\TSO_PSO\\Windows System Report\\<br>3. Right-click <em>WindowsSystemReport.bat</em> and select <em>Run as administrator</em>.<br>4. Wait for the process to complete (a ZIP file will appear on the Desktop).<br>5. Attach the ZIP file to this support ticket.<br><br>This tool is read-only. It collects MobileView and Apache logs, Windows Event logs, installed applications, and network/system information to help us troubleshoot issues efficiently."
+ },
+
+ {
+    "question": "Find Asset Location via reporting tool",
+    "answer": "<br>OBS nice video on finding device location via saved reports"
+  }
+  
+  
+]

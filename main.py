@@ -1,3 +1,5 @@
+from fastapi import FastAPI, Request, Response
+from fastapi.responses import HTMLResponse, RedirectResponse
 import os
 from fastapi import FastAPI, Request
 from fastapi.staticfiles import StaticFiles
@@ -5,7 +7,6 @@ from fastapi import FastAPI
 from fastapi.responses import HTMLResponse
 import json
 import re
-import os
 
 app = FastAPI()
 
@@ -16,15 +17,12 @@ with open("kb.json", "r", encoding="utf-8") as f:
     kb = json.load(f)
 
 
-
 @app.get("/", response_class=HTMLResponse)
 def home(request: Request):
+    auth = request.cookies.get("kb_auth")
+    expected = os.environ.get("KB_PASSWORD", "")
 
-    password = request.query_params.get("password", "").strip()
-    expected = os.environ.get("KB_PASSWORD", "").strip()
-    
-    if not password or password != expected:
-
+    if auth != expected:
         return HTMLResponse(
             """
             <html>
@@ -32,7 +30,7 @@ def home(request: Request):
               <body style="font-family: Arial; text-align:center; margin-top:80px;">
                 <h2>RTLS Operations Knowledge Base</h2>
                 <p>Internal access only</p>
-                <form method="get">
+                <form method="post" action="/login">
                   <input type="password" name="password" placeholder="Enter password">
                   <br><br>
                   <button type="submit">Enter</button>
@@ -47,13 +45,17 @@ def home(request: Request):
         return f.read()
 
 
-
 @app.get("/search")
-def search(q: str):
+def search(request: Request, q: str):
+    auth = request.cookies.get("kb_auth")
+    expected = os.environ.get("KB_PASSWORD", "")
+
+    if auth != expected:
+        return []
+
     q = q.lower().rstrip("s")
     results = []
 
-    # build word-boundary regex: \bwork\b
     pattern = re.compile(rf"\b{re.escape(q)}s?\b")
 
     for item in kb:
@@ -64,6 +66,26 @@ def search(q: str):
             results.append(item)
 
     return results
+
+
+@app.post("/login")
+async def login(request: Request):
+    form = await request.form()
+    password = form.get("password", "")
+    expected = os.environ.get("KB_PASSWORD", "")
+
+    if password != expected:
+        return HTMLResponse("<h3>Invalid password</h3>", status_code=401)
+
+    response = RedirectResponse(url="/", status_code=302)
+    response.set_cookie(
+        key="kb_auth",
+        value=password,
+        httponly=True,
+        secure=True,
+        samesite="lax"
+    )
+    return response
 
 
 

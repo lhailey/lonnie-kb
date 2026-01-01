@@ -72,22 +72,22 @@ async def login(request: Request):
     password = form.get("password", "")
     expected = os.environ.get("KB_PASSWORD", "")
 
-    if password != expected:
+    print("DEBUG password entered:", repr(password))
+    print("DEBUG expected password:", repr(expected))
+
+    if password.strip().lower() != expected.strip().lower():
         return HTMLResponse("<h3>Invalid password</h3>", status_code=401)
 
-    # ✅ Create redirect response
     response = RedirectResponse(url="/", status_code=302)
-
-    # ✅ THIS is where set_cookie belongs
     response.set_cookie(
         key="kb_auth",
-        value=password,
+        value=expected.strip().lower(),
         httponly=True,
         secure=True,
         samesite="lax"
     )
-
     return response
+
 
 
 

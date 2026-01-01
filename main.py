@@ -22,7 +22,7 @@ def home(request: Request):
     password = request.query_params.get("password")
     expected = os.environ.get("KB_PASSWORD")
 
-    if password != expected:
+    if not password or password != expected:
         return HTMLResponse(
             """
             <html>
@@ -62,6 +62,7 @@ def search(q: str):
             results.append(item)
 
     return results
+
 
 
 

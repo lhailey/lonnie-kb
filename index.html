@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>KB Search</title>
+  <title>RTLS Operations Knowledge Base</title>
   <meta charset="utf-8">
 </head>
 <body>
 
-<h2>Lonnie's KB Search</h2>
+<h2>RTLS Operations Knowledge Base</h2>
+
 <input id="q"
        style="width:600px"
        placeholder="Type your question here"
@@ -22,20 +23,12 @@
 function highlight(text, term) {
   if (!term) return text;
 
-  // remove trailing 's' if present
-  const base = term.toLowerCase().endsWith("s")
-    ? term.slice(0, -1)
-    : term;
-
-  // match singular OR plural
-  const regex = new RegExp(`\\b(${base}s?)\\b`, "gi");
-
+  const regex = new RegExp(`(${term})`, "gi");
   return text.replace(
     regex,
-    `<span style="background-color: yellow; font-weight: bold;">$1</span>`
+    `<span style="background-color: yellow; color: black; font-weight: bold;">$1</span>`
   );
 }
-
 
 async function search() {
   const q = document.getElementById("q").value;
@@ -49,12 +42,10 @@ async function search() {
   } else {
     data.forEach((item, i) => {
       output += `<h3>Result ${i + 1}</h3>`;
-	  
-	  const term = q;
-
-	  output += `<strong>Question:</strong> ${highlight(item.question, term)}<br><br>`;
-	  output += `<strong>Answer:</strong><br>${highlight(item.answer, term)}<br><br>`;
-
+      output += `<strong>Question:</strong><br>`;
+      output += `${highlight(item.question, q)}<br><br>`;
+      output += `<strong>Answer:</strong><br>`;
+      output += `${highlight(item.answer, q)}<br><br>`;
 
       if (item.images && item.images.length > 0) {
         item.images.forEach(img => {
@@ -72,4 +63,3 @@ async function search() {
 
 </body>
 </html>
-

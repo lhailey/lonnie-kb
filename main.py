@@ -1,12 +1,10 @@
-from fastapi import FastAPI, Request, Response
-from fastapi.responses import HTMLResponse, RedirectResponse
 import os
-from fastapi import FastAPI, Request
-from fastapi.staticfiles import StaticFiles
-from fastapi import FastAPI
-from fastapi.responses import HTMLResponse
 import json
 import re
+from fastapi import FastAPI, Request, Response
+from fastapi.responses import HTMLResponse, RedirectResponse
+from fastapi.staticfiles import StaticFiles
+
 
 app = FastAPI()
 
@@ -90,6 +88,7 @@ async def login(request: Request):
     )
 
     return response
+
 
 
 

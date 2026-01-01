@@ -19,10 +19,12 @@ with open("kb.json", "r", encoding="utf-8") as f:
 
 @app.get("/", response_class=HTMLResponse)
 def home(request: Request):
-    password = request.query_params.get("password")
-    expected = os.environ.get("KB_PASSWORD")
 
+    password = request.query_params.get("password", "").strip()
+    expected = os.environ.get("KB_PASSWORD", "").strip()
+    
     if not password or password != expected:
+
         return HTMLResponse(
             """
             <html>
@@ -62,6 +64,7 @@ def search(q: str):
             results.append(item)
 
     return results
+
 
 
 

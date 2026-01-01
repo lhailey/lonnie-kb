@@ -77,7 +77,10 @@ async def login(request: Request):
     if password != expected:
         return HTMLResponse("<h3>Invalid password</h3>", status_code=401)
 
+    # ✅ Create redirect response
     response = RedirectResponse(url="/", status_code=302)
+
+    # ✅ THIS is where set_cookie belongs
     response.set_cookie(
         key="kb_auth",
         value=password,
@@ -85,7 +88,9 @@ async def login(request: Request):
         secure=True,
         samesite="lax"
     )
+
     return response
+
 
 
 

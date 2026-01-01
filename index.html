@@ -26,8 +26,9 @@ function highlight(text, term) {
   const regex = new RegExp(`(${term})`, "gi");
   return text.replace(
     regex,
-    `<span style="background-color: yellow; color: black; font-weight: bold;">$1</span>`
+    `<mark style="font-weight:bold;">$1</mark>`
   );
+
 }
 
 async function search() {
@@ -64,4 +65,5 @@ async function search() {
 
 </body>
 </html>
+
 

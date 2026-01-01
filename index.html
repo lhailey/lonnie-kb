@@ -31,7 +31,8 @@ function highlight(text, term) {
 }
 
 async function search() {
-  const q = document.getElementById("q").value;
+  const raw = document.getElementById("q").value;
+  const q = raw.replace(/s$/i, "");
   const r = await fetch(`/search?q=${encodeURIComponent(q)}`);
   const data = await r.json();
 
@@ -63,3 +64,4 @@ async function search() {
 
 </body>
 </html>
+

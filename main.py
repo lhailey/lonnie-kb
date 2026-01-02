@@ -6,6 +6,11 @@ import re
 
 app = FastAPI()
 
+@app.get("/health")
+def health():
+    return {"status": "ok"}
+
+
 app.mount("/images", StaticFiles(directory="images"), name="images")
 
 
@@ -35,5 +40,6 @@ def search(q: str):
             results.append(item)
 
     return results
+
 
 

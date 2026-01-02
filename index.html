@@ -1,49 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
+  <title>KB Search</title>
   <meta charset="utf-8">
-  <title>RTLS Operations Knowledge Base</title>
-
-  <style>
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      margin: 20px;
-    }
-
-    input {
-      padding: 6px;
-      font-size: 14px;
-    }
-
-    button {
-      padding: 6px 10px;
-      font-size: 14px;
-      margin-left: 6px;
-    }
-
-    mark {
-      background-color: yellow;
-      color: black;
-      font-weight: bold;
-    }
-
-    pre {
-      white-space: pre-wrap;
-      line-height: 1.4;
-    }
-  </style>
 </head>
-
 <body>
 
-<h2>RTLS Operations Knowledge Base</h2>
-
-<input
-  id="q"
-  style="width:600px"
-  placeholder="Type your question here"
-  onkeydown="if (event.key === 'Enter') search();"
-/>
+<h2>Lonnie's KB Search</h2>
+<H5>To load server, run cmd "C:\fastapi>python -m uvicorn main:app --reload"<br><br><br></H5>
+<input id="q"
+       style="width:600px"
+       placeholder="Type your question here"
+       onkeydown="if (event.key === 'Enter') search();">
 
 <button onclick="search()">Search</button>
 
@@ -52,44 +20,54 @@
 <div id="out"></div>
 
 <script>
-function escapeRegex(text) {
-  return text.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-}
-
 function highlight(text, term) {
   if (!term) return text;
 
-  const safeTerm = escapeRegex(term);
-  const regex = new RegExp(`(${safeTerm})`, "gi");
+  // remove trailing 's' if present
+  const base = term.toLowerCase().endsWith("s")
+    ? term.slice(0, -1)
+    : term;
 
-  return text.replace(regex, "<mark>$1</mark>");
+  // match singular OR plural
+  const regex = new RegExp(`\\b(${base}s?)\\b`, "gi");
+
+  return text.replace(
+    regex,
+    `<span style="background-color: yellow; font-weight: bold;">$1</span>`
+  );
 }
 
-function search() {
-  const term = document.getElementById("q").value.trim();
-  const out = document.getElementById("out");
 
-  if (!term) {
-    out.innerHTML = "";
-    return;
+async function search() {
+  const q = document.getElementById("q").value;
+  const r = await fetch(`/search?q=${encodeURIComponent(q)}`);
+  const data = await r.json();
+
+  let output = "";
+
+  if (!data || data.length === 0) {
+    output = "<p>No match found</p>";
+  } else {
+    data.forEach((item, i) => {
+      output += `<h3>Result ${i + 1}</h3>`;
+	  
+	  const term = q;
+
+	  output += `<strong>Question:</strong> ${highlight(item.question, term)}<br><br>`;
+	  output += `<strong>Answer:</strong><br>${highlight(item.answer, term)}<br><br>`;
+
+
+      if (item.images && item.images.length > 0) {
+        item.images.forEach(img => {
+          output += `<img src="/images/${img}" style="max-width:800px; display:block; margin-bottom:20px;">`;
+        });
+      }
+
+      output += `<hr>`;
+    });
   }
 
-  // === SAMPLE KB CONTENT ===
-  // Replace this block later with fetch() or backend data
-  const kbText = `
-MobileView upgrade procedure
-ALE Node1 reboot steps
-ALE Node2 verification checklist
-Cisco MSE integration overview
-Certificate renewal process
-High availability failover test
-Gateway communication troubleshooting
-Tag not reporting investigation
-`;
-
-  const highlighted = highlight(kbText, term);
-
-  out.innerHTML = "<pre>" + highlighted + "</pre>";
+  document.getElementById("out").innerHTML = output;
 }
 </script>
 

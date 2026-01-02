@@ -1,18 +1,17 @@
-import json
-import re
+from fastapi.staticfiles import StaticFiles
 from fastapi import FastAPI
 from fastapi.responses import HTMLResponse
-from fastapi.staticfiles import StaticFiles
+import json
+import re
 
 app = FastAPI()
 
-# Serve images
 app.mount("/images", StaticFiles(directory="images"), name="images")
+
 
 # Load the knowledge base
 with open("kb.json", "r", encoding="utf-8") as f:
     kb = json.load(f)
-
 
 @app.get("/", response_class=HTMLResponse)
 def home():
@@ -25,6 +24,7 @@ def search(q: str):
     q = q.lower().rstrip("s")
     results = []
 
+    # build word-boundary regex: \bwork\b
     pattern = re.compile(rf"\b{re.escape(q)}s?\b")
 
     for item in kb:
@@ -35,3 +35,5 @@ def search(q: str):
             results.append(item)
 
     return results
+
+

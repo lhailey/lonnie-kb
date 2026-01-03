@@ -66,23 +66,36 @@ async function search() {
   if (!data || data.length === 0) {
     output = "<p>No match found</p>";
   } else {
-    data.forEach((item, i) => {
-      output += `<h3>Result ${i + 1}</h3>`;
 	  
+	data.forEach((item, i) => {
 	  const term = q;
+	
+	  output += `
+	    <details style="margin-bottom:16px;">
+	      <summary style="cursor:pointer; font-weight:bold;">
+	        ${i + 1}. ${highlight(item.question, term)}
+	      </summary>
+	
+	      <div style="margin-top:10px; padding-left:10px;">
+	        ${highlight(item.answer, term)}
+	  `;
+	
+	  if (item.images && item.images.length > 0) {
+	    item.images.forEach(img => {
+	      output += `
+	        <img src="/images/${img}"
+	             style="max-width:800px; display:block; margin:10px 0;">
+	      `;
+	    });
+	  }
+	
+	  output += `
+	      </div>
+	    </details>
+	  `;
+	});
 
-	  output += `<strong>Question:</strong> ${highlight(item.question, term)}<br><br>`;
-	  output += `<strong>Answer:</strong><br>${highlight(item.answer, term)}<br><br>`;
-
-
-      if (item.images && item.images.length > 0) {
-        item.images.forEach(img => {
-          output += `<img src="/images/${img}" style="max-width:800px; display:block; margin-bottom:20px;">`;
-        });
-      }
-
-      output += `<hr>`;
-    });
+// FINISHED - AFTER (Collapsible loop — PASTE THIS INSTEAD)		  
   }
 
   document.getElementById("out").innerHTML = output;
@@ -91,6 +104,7 @@ async function search() {
 
 </body>
 </html>
+
 
 
 

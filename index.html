@@ -17,15 +17,33 @@
 	  color: #1f2937;
 	}
 	
-	.container {
-	  max-width: 900px;
-	  margin: 120px auto;
-	  padding: 40px;
-	  background: white;
-	  border-radius: 10px;
-	  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+	.header {
+	  background: #f8fafc;
+	  padding: 60px 40px;
+	  border-bottom: 1px solid #e5e7eb;
 	}
 	
+	.header-inner {
+	  max-width: 900px;
+	  margin: 0 auto;
+	}
+	
+	.header h1 {
+	  margin: 0 0 24px 0;
+	  font-size: 40px;
+	  font-weight: 600;
+	  color: #1f2937;
+	}
+	
+	.content {
+	  max-width: 900px;
+	  margin: 40px auto;
+	  padding: 0 40px 60px;
+	}
+	
+
+	  
+	  
 	h1 {
 	  margin-top: 0;
 	  font-size: 36px;
@@ -65,28 +83,31 @@
 	  border: none;
 	  border-top: 1px solid #e5e7eb;
 	}
-		  
+
+	
    </style>
 </head>
 
 <body>
 
-<div class="container">
-  <h1>Lonnie's KB Search</h1>
+<div class="header">
+  <div class="header-inner">
+    <h1>Lonnie's KB Search</h1>
 
-  <div class="search-row">
-    <input id="q"
-           placeholder="Type your question here"
-           onkeydown="if (event.key === 'Enter') search();">
+    <div class="search-row">
+      <input id="q"
+             placeholder="Type your question here"
+             onkeydown="if (event.key === 'Enter') search();">
 
-    <button onclick="search()">Search</button>
+      <button onclick="search()">Search</button>
+    </div>
   </div>
-
-  <hr>
-
-  <div id="out"></div>
 </div>
 
+<div class="content">
+  <div id="out"></div>
+</div>
+	
 <script>
 function highlight(text, term) {
   if (!term) return text;
@@ -95,10 +116,8 @@ function highlight(text, term) {
   const base = term.toLowerCase().endsWith("s")
     ? term.slice(0, -1)
     : term;
-
   // match singular OR plural
   const regex = new RegExp(`\\b(${base}s?)\\b`, "gi");
-
   return text.replace(
     regex,
     `<span style="background-color: yellow; font-weight: bold;">$1</span>`
@@ -144,8 +163,7 @@ async function search() {
 	    </details>
 	  `;
 	});
-
-// FINISHED - AFTER (Collapsible loop — PASTE THIS INSTEAD)		  
+  
   }
 
   document.getElementById("out").innerHTML = output;
@@ -154,6 +172,7 @@ async function search() {
 
 </body>
 </html>
+
 
 
 

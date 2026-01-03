@@ -21,7 +21,7 @@
   },
   
   {
-    "question": "Ubuntu view and edit network connections. Use this instead of cockpit",
+    "question": "Ubuntu view and edit network connections <br> Terminal Use",
     "answer": "<br>Sudo nmtui"
   },
   
@@ -37,7 +37,7 @@
   },  
 
   {
-    "question": "License Key for HM – Hardware Manager License",
+    "question": "License Key for HM <br> Hardware Manager License",
     "answer": "<br>Tag Manager License Key: SHKT4393",
 	"images": ["hw_manager_license_key.png"]	
   },
@@ -58,27 +58,27 @@
  },
 
  {
-   "question": "Ticket 336467 - Deployment Manager ver. 5.6.8.4 Not working with T15e with 2.4 FW",
+   "question": "Ticket 336467 <br> Deployment Manager ver. 5.6.8.4 Not working with T15e with 2.4 FW",
    "answer": "<br><strong>Issue Summary:</strong><br>Customer is unable to configure or update firmware on T15e tags running firmware 2.4 using Deployment Manager (iOS) version 5.6.8.4. <br>When connecting to the tag, Deployment Manager displays a pop-up message stating that only partial information is available for the tag. <br>Configuration pages are visible, but changes cannot be made, preventing firmware updates and SSID/key configuration.<br><br><strong>Email Thread / Investigation Details:</strong><br><br><strong>From:</strong> Gidon Lissai &lt;Gidi.Lissai@securitashealthcare.com&gt;<br><strong>Sent:</strong> Monday, December 15, 2025 12:27 PM<br><strong>To:</strong> Kevin Clayburne; Arye Shor<br><strong>Cc:</strong> Damon Saltzman<br><strong>Subject:</strong> RE: Ticket 336467 - Deployment Manager ver. 5.6.8.4 Not working with T15e with 2.4 FW<br><br>Firmware update from the Deployment Manager is supported starting with T15e firmware version 2.5.13. Refer to the T15e release notes for confirmation.<br><br><hr><br><strong>From:</strong> Kevin Clayburne &lt;Kevin.Clayburne@securitashealthcare.com&gt;<br><strong>Sent:</strong> Monday, December 15, 2025 1:23 PM<br><strong>To:</strong> Gidon Lissai; Arye Shor<br><strong>Cc:</strong> Damon Saltzman<br><strong>Subject:</strong> RE: Ticket 336467 - Deployment Manager ver. 5.6.8.4 Not working with T15e with 2.4 FW<br><br>I have been helping a peer with a similar ticket. The customer is using Deployment Manager (iOS) version 5.6.8.4 with a T15e running firmware 2.4. <br>When clicking the tag image and opening the three-dot menu, the Firmware Update option is missing. This previously worked after guidance provided in October. <br>I reproduced the issue by rolling my own T15e back to firmware 2.4 and confirmed the firmware update option is no longer available.<br>After upgrading the tag to firmware 2.5 via MobileView, the firmware update option became available again.<br><br><hr><br><strong>From:</strong> Gidon Lissai &lt;Gidi.Lissai@securitashealthcare.com&gt;<br><strong>Sent:</strong> Tuesday, October 28, 2025 8:02 AM<br><strong>To:</strong> Kevin Clayburne; Arye Shor<br><strong>Cc:</strong> Damon Saltzman<br><strong>Subject:</strong> RE: Ticket 336467 - Deployment Manager ver. 5.6.8.4 Not working with T15e with 2.4 FW<br><br>The root cause has been identified. This issue exists with T15e/h/ms firmware version 2.4 and below. It will be addressed in the next Deployment Manager version planned for Q1 2026. <br>The workaround described below works as expected and allows tag configuration and configuration file upload if needed.<br><br><hr><br><strong>From:</strong> Gidon Lissai<br><strong>Sent:</strong> Monday, October 27, 2025 8:10 AM<br><strong>To:</strong> Kevin Clayburne; Arye Shor<br><strong>Cc:</strong> Damon Saltzman<br><strong>Subject:</strong> RE: Ticket 336467 - Deployment Manager ver. 5.6.8.4 Not working with T15e with 2.4 FW<br><br>Suggested workaround: Configure the tag without performing a Get Configuration first. Select the tag by pressing the tag image, <br>press the More (three-dot) menu, and choose Configure. This opens the configuration screen with default or new settings.<br><br><hr><br><strong>From:</strong> Kevin Clayburne &lt;Kevin.Clayburne@securitashealthcare.com&gt;<br><strong>Sent:</strong> Monday, October 27, 2025 7:04 AM<br><strong>To:</strong> Gidon Lissai; Arye Shor<br><strong>Cc:</strong> Damon Saltzman<br><strong>Subject:</strong> Ticket 336467 - Deployment Manager ver. 5.6.8.4 Not working with T15e with 2.4 FW<br><br>Customer reports they are unable to configure T15e tags running firmware 2.4 using the latest Deployment Manager.<br>When connecting to the tag, a pop-up appears stating that only partial information is available. <br>Configuration pages are accessible but cannot be edited, preventing firmware updates and SSID/key configuration. <br>A similar issue is being tracked under ticket 336376. An image of the message box was attached for reference.<br><br><strong>Conclusion / Resolution:</strong><br>Firmware updates from Deployment Manager are not supported for T15e firmware 2.4 and below. <br>Firmware upgrade capability becomes available only after upgrading the tag to firmware 2.5.x or later via MobileView. <br>A permanent fix is planned for a future Deployment Manager release in Q1 2026."
  },
 
  {
-   "question": "Email Search for New updates to Lonnie's KB",
+   "question": "Todo<br>Email Search for New updates to Lonnie's KB",
    "answer": "<br>Search Email for <h2>new solution pub</h2>"
  },
 
  {
-   "question": "OBS Recording Index - Current Folder (C:\\Recordings\\OBS\\Current)",
+   "question": "OBS Recording Index folder location <br> (C:\\Recordings\\OBS\\Current)",
    "answer": "<br><b>Purpose:</b><br>This KB entry documents the contents of the OBS Current recordings directory. These recordings correspond to troubleshooting sessions, upgrades, and ticket resolutions and can be referenced for historical review, training, or ticket documentation.<br><br><b>Directory:</b><br>C:\\Recordings\\OBS\\Current<br><br><b>Recording Inventory:</b><br><br><b>10/16/2025 11:30 AM</b><br>File Size: 713,700,066 bytes<br>Filename: 337042 Damon fixed the issue with Jay Pittman 2025-10-16 11-02-42.mkv<br><br><b>09/03/2025 11:06 AM</b><br>File Size: 15,110,883 bytes<br>Filename: Amber problem solved with Dave Reads Solution 2025-09-03 12-02-02.mkv<br><br><b>01/02/2026 01:38 PM</b><br>File Size: 186,017,736 bytes<br>Filename: D and D helped. No tag data. Bottom line is Cisco 2026-01-02 13-05-06.mkv<br><br><b>12/05/2025 10:43 AM</b><br>File Size: 257,271,151 bytes<br>Filename: Exciter Failure Add to Ticket 2025-12-05 09-57-22.mkv<br><br><b>12/15/2025 12:22 PM</b><br>File Size: 335,590,314 bytes<br>Filename: Finding device location via saved reports.mkv<br><br><b>11/14/2025 01:44 PM</b><br>File Size: 211,334,285 bytes<br>Filename: Franklin Jimenez full queue resolved close ticket 2025-11-14 13-09-30.mkv<br><br><b>12/18/2025 10:21 AM</b><br>File Size: 2,230,474,293 bytes<br>Filename: Lonnie's upgrade for Song Lee Fixed Saved Reports and Missing Exciters.mkv<br><br><b>Summary:</b><br>Total Files: 7<br>Total Size: 3,949,498,728 bytes<br><br><b>Notes:</b><br>These recordings may be referenced when building KB articles, reviewing upgrade procedures, validating fixes, or attaching supporting evidence to customer tickets."
  },
 
 {
-  "question": "Aeroscout Links Repeat Alerts Function Not Operating as Expected",
+  "question": "Aeroscout Links Repeat Alerts Function <br> Not Operating as Expected",
   "answer": "<br><strong>Last Updated:</strong> December 16, 2025<br><br><strong>Product:</strong> Links<br><strong>Version:</strong> 5.8.20 and earlier<br><strong>Date Created:</strong> September 10, 2025<br><strong>Author:</strong> Research & Development / Arye Shor<br><br><strong>Source Ticket:</strong> 00333549<br><br><strong>Symptom:</strong><br>The repeat alerts feature is not functioning correctly. During testing on a lab system, only a single alert was received, whereas multiple alerts were expected.<br><br><strong>Problem Description:</strong><br>Repeat notifications were tested on the following asset within the organization \"Kennan’s Pilot Kit\" using the Links platform:<br><br><strong>Asset Details:</strong><br>Asset Name: Sterile Processing 23<br>Location: 2nd Floor Table<br>Device MAC Address: 000CCC1EBF69<br>Reported Value: 70°F<br>Normal Range: 50°F – 60.1°F<br>Threshold Time: 0 Minutes<br><br>The reminder job responsible for generating repeat alerts ceased functioning, resulting in only one alert being issued instead of the expected recurring notifications.<br><br><strong>Solution:</strong><br>The issue was resolved by restarting the rules-processing server hosted in AWS."
 },
 
 {
-  "question": "HUGS Authentication Clients Disconnect and Display MobileView Error Message",
+  "question": "HUGS Authentication Clients Disconnect <br> Displays MobileView Error Message",
   "answer": "<br><strong>Last Updated:</strong> December 16, 2025<br><br><strong>Product:</strong> MobileView<br><strong>Version:</strong> 5.8.20 and earlier<br><strong>Date Created:</strong> August 24, 2025<br><strong>Author:</strong> Research & Development / Arye Shor<br><br><strong>Source Ticket:</strong> 00329229<br><br><strong>Symptom:</strong><br>HUGS Authentication Clients intermittently disconnect, resulting in a white screen accompanied by a generic MobileView error message.<br><br><strong>Problem Description:</strong><br>Authentication clients occasionally display a white screen with a generic error message. This behavior appears to be random and is associated with Event ID 61003 from the source \"Application Frozen.\"<br><br>The error message indicates that the event description cannot be found, suggesting that either the relevant component is not installed or the installation is corrupted. The message advises installing or repairing the component on the local machine.<br><br>If the event originated from another computer, the display information must have been saved with the event.<br><br><strong>Event Details:</strong><br>Application Name: MobileView Client Loader.exe<br>Path: C:\\Program Files (x86)\\AeroScout\\Authentication Client\\MobileView Client Loader.exe<br>Version: 5.7.20.180<br>Process ID: 3788<br>Window Title: Authentication Client<br>Start Time: July 25, 2025, 1:17:09 PM<br>End Time: July 25, 2025, 1:17:18 PM<br>Duration: 00:00:09.073<br>Resolution: Application was unfrozen<br><br>The message resource is present, but the corresponding message was not found in the message table.<br><br><strong>Solution:</strong><br>A patch was provided to the customer and successfully tested on versions 5.7.20 and 5.7.30.<br><br><strong>Reference ID:</strong> 108490<br><strong>Fix:</strong> Authentication Client – Upgrade of embedded WebView component"
 },
 
@@ -88,7 +88,7 @@
 },
 
 {
-  "question": "Instant Notifier - Unclear Error Logged After Removal of Custom Property Used in INF Event Action",
+  "question": "Instant Notifier<br>Unclear Error Logged After Removal of Custom Property Used in INF Event Action",
   "answer": "<br><strong>Last Updated:</strong> December 16, 2025<br><br><strong>Product:</strong> MobileView<br><strong>Version:</strong> 5.8.20 and earlier<br><strong>Date Created:</strong> September 8, 2025<br><strong>Author:</strong> Research & Development / Arye Shor<br><br><strong>Source Ticket:</strong> 00333100<br><br><strong>Symptom:</strong><br>Following the removal of a custom property that is actively referenced in an INF (Instant Notification Framework) event action, the MobileView server log displays repeated and unclear error messages.<br><br><strong>Example Log Entries:</strong><br><br>2025-09-03 11:03:49,144 WARN &lt;&gt; [com.aeroscout.mobileview.web.core.filters.SessionTimeoutFilter] Session timeout detected, redirecting...<br><br>2025-09-03 11:04:07,729 ERROR &lt;&gt; [com.aeroscout.mobileview.alertingconnector.alert.InstantAlertTemplateGenerator] could not detect custom property definition with id : 22, fieldKey: AssetCP_22<br><br>2025-09-03 11:04:07,729 ERROR &lt;&gt; [com.aeroscout.mobileview.alertingconnector.alert.InstantAlertTemplateGenerator] could not detect custom property definition with id : 20, fieldKey: AssetCP_20<br><br>2025-09-03 11:04:07,729 ERROR &lt;&gt; [com.aeroscout.mobileview.alertingconnector.alert.InstantAlertTemplateGenerator] could not detect custom property definition with id : 25, fieldKey: AssetCP_25<br><br>2025-09-03 11:04:07,729 ERROR &lt;&gt; [com.aeroscout.mobileview.alertingconnector.alert.InstantAlertTemplateGenerator] could not detect custom property definition with id : 24, fieldKey: AssetCP_24<br><br>2025-09-03 11:04:07,729 ERROR &lt;&gt; [com.aeroscout.mobileview.alertingconnector.alert.InstantAlertTemplateGenerator] could not detect custom property definition with id : 21, fieldKey: AssetCP_21<br><br><strong>Problem Description:</strong><br>An exception is logged when a custom property (CP) is deleted while it is still referenced in an active event configuration. This results in repeated error messages in the server log, particularly if the associated alert remains active and is not dismissed.<br><br><strong>Reproduction Steps:</strong><br>1. Create a custom property.<br>2. Configure an event that displays the custom property in the INF.<br>3. Trigger the event and confirm the custom property is displayed in INF.<br>4. Delete the custom property.<br><br><strong>Actual Behavior:</strong><br>If the alert generated by the event is not dismissed, the following error recurs every five minutes:<br><br>2025-09-08 11:16:55,829 ERROR &lt;&gt; [com.aeroscout.mobileview.alertingconnector.alert.InstantAlertTemplateGenerator] could not detect custom property definition with id : 20, fieldKey: AssetCP_20<br><br><strong>Solution:</strong><br>Solution details pending."
 },
 
@@ -108,12 +108,12 @@
 },
 
 {
-  "question": "Temporary Home Screen Issue: Users Can See Alerts They Are Not Permitted to View",
+  "question": "Temporary Home Screen Issue <br> Users Can See Alerts They Are Not Permitted to View",
   "answer": "<br><strong>Last Updated:</strong> December 31, 2025<br><br><strong>Product:</strong> MobileView<br><strong>Version:</strong> 5.8.20 and below<br><strong>Date Created:</strong> December 24, 2025<br><strong>Author:</strong> Research & Development / Arye Shor<br><br><strong>Source Ticket:</strong> 00315772<br><br><strong>Symptom:</strong><br>On the MobileView home screen, users can see the count of pending alerts even when those alerts are not assigned to their permitted departments.<br><br><strong>Impact:</strong><br>This issue affects the alert count displayed on the EM dashboard, but does not grant users access to view or act on alerts outside of their permissions.<br><br><strong>Solution:</strong><br>A defect has been opened and will be addressed in MobileView version 5.8 MR1.<br><br><strong>Defect ID:</strong> 105753<br><strong>Description:</strong> Incorrect alert count displayed on the EM dashboard filter button."
 },
 
 {
-  "question": "Asset with Time Zone Asia/Riyadh Displays Internal Server Error in Asset Details Screen",
+  "question": "Asset with Time Zone Asia/Riyadh <br> Displays Internal Server Error in Asset Details Screen",
   "answer": "<br><strong>Last Updated:</strong> December 31, 2025<br><br><strong>Product:</strong> AeroScout Links<br><strong>Version:</strong> 19.2.112<br><strong>Date Created:</strong> December 24, 2025<br><strong>Author:</strong> Research & Development / Arye Shor<br><br><strong>Source Ticket:</strong> 00332360<br><br><strong>Symptom:</strong><br>When an asset configured with the time zone Asia/Riyadh87, Asia/Riyadh88, or Asia/Riyadh89 is selected, the Asset Details screen displays an Internal Server Error instead of the asset temperature graph.<br><br><strong>Solution:</strong><br>The issue has been resolved in version 3.0.1.12.<br><br><strong>Defect ID:</strong> 109021<br><strong>Description:</strong> Links Web FE – Asset with time zone Asia/Riyadh87/88/89 caused Internal Server Error in the Asset Details screen.<br><br><strong>Workaround:</strong><br>As a temporary workaround, update the asset time zone to Asia/Riyadh instead of Asia/Riyadh87/88/89."
 },
 
@@ -129,11 +129,9 @@
 
 
 
-
-
-
 	
 ]
+
 
 
 

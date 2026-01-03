@@ -70,9 +70,18 @@
  {
    "question": "OBS Recording Index - Current Folder (C:\\Recordings\\OBS\\Current)",
    "answer": "<br><b>Purpose:</b><br>This KB entry documents the contents of the OBS Current recordings directory. These recordings correspond to troubleshooting sessions, upgrades, and ticket resolutions and can be referenced for historical review, training, or ticket documentation.<br><br><b>Directory:</b><br>C:\\Recordings\\OBS\\Current<br><br><b>Recording Inventory:</b><br><br><b>10/16/2025 11:30 AM</b><br>File Size: 713,700,066 bytes<br>Filename: 337042 Damon fixed the issue with Jay Pittman 2025-10-16 11-02-42.mkv<br><br><b>09/03/2025 11:06 AM</b><br>File Size: 15,110,883 bytes<br>Filename: Amber problem solved with Dave Reads Solution 2025-09-03 12-02-02.mkv<br><br><b>01/02/2026 01:38 PM</b><br>File Size: 186,017,736 bytes<br>Filename: D and D helped. No tag data. Bottom line is Cisco 2026-01-02 13-05-06.mkv<br><br><b>12/05/2025 10:43 AM</b><br>File Size: 257,271,151 bytes<br>Filename: Exciter Failure Add to Ticket 2025-12-05 09-57-22.mkv<br><br><b>12/15/2025 12:22 PM</b><br>File Size: 335,590,314 bytes<br>Filename: Finding device location via saved reports.mkv<br><br><b>11/14/2025 01:44 PM</b><br>File Size: 211,334,285 bytes<br>Filename: Franklin Jimenez full queue resolved close ticket 2025-11-14 13-09-30.mkv<br><br><b>12/18/2025 10:21 AM</b><br>File Size: 2,230,474,293 bytes<br>Filename: Lonnie's upgrade for Song Lee Fixed Saved Reports and Missing Exciters.mkv<br><br><b>Summary:</b><br>Total Files: 7<br>Total Size: 3,949,498,728 bytes<br><br><b>Notes:</b><br>These recordings may be referenced when building KB articles, reviewing upgrade procedures, validating fixes, or attaching supporting evidence to customer tickets."
- }
+ },
+
+{
+  "question": "Aeroscout Links Repeat Alerts Function Not Operating as Expected",
+  "answer": "<br><strong>Last Updated:</strong> December 16, 2025<br><br><strong>Product:</strong> Links<br><strong>Version:</strong> 5.8.20 and earlier<br><strong>Date Created:</strong> September 10, 2025<br><strong>Author:</strong> Research & Development / Arye Shor<br><br><strong>Source Ticket:</strong> 00333549<br><br><strong>Symptom:</strong><br>The repeat alerts feature is not functioning correctly. During testing on a lab system, only a single alert was received, whereas multiple alerts were expected.<br><br><strong>Problem Description:</strong><br>Repeat notifications were tested on the following asset within the organization \"Kennan’s Pilot Kit\" using the Links platform:<br><br><strong>Asset Details:</strong><br>Asset Name: Sterile Processing 23<br>Location: 2nd Floor Table<br>Device MAC Address: 000CCC1EBF69<br>Reported Value: 70°F<br>Normal Range: 50°F – 60.1°F<br>Threshold Time: 0 Minutes<br><br>The reminder job responsible for generating repeat alerts ceased functioning, resulting in only one alert being issued instead of the expected recurring notifications.<br><br><strong>Solution:</strong><br>The issue was resolved by restarting the rules-processing server hosted in AWS."
+}
+
+
+
 	
 ]
+
 
 
 

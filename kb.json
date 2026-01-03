@@ -75,12 +75,19 @@
 {
   "question": "Aeroscout Links Repeat Alerts Function Not Operating as Expected",
   "answer": "<br><strong>Last Updated:</strong> December 16, 2025<br><br><strong>Product:</strong> Links<br><strong>Version:</strong> 5.8.20 and earlier<br><strong>Date Created:</strong> September 10, 2025<br><strong>Author:</strong> Research & Development / Arye Shor<br><br><strong>Source Ticket:</strong> 00333549<br><br><strong>Symptom:</strong><br>The repeat alerts feature is not functioning correctly. During testing on a lab system, only a single alert was received, whereas multiple alerts were expected.<br><br><strong>Problem Description:</strong><br>Repeat notifications were tested on the following asset within the organization \"Kennan’s Pilot Kit\" using the Links platform:<br><br><strong>Asset Details:</strong><br>Asset Name: Sterile Processing 23<br>Location: 2nd Floor Table<br>Device MAC Address: 000CCC1EBF69<br>Reported Value: 70°F<br>Normal Range: 50°F – 60.1°F<br>Threshold Time: 0 Minutes<br><br>The reminder job responsible for generating repeat alerts ceased functioning, resulting in only one alert being issued instead of the expected recurring notifications.<br><br><strong>Solution:</strong><br>The issue was resolved by restarting the rules-processing server hosted in AWS."
+},
+
+{
+  "question": "HUGS Authentication Clients Disconnect and Display MobileView Error Message",
+  "answer": "<br><strong>Last Updated:</strong> December 16, 2025<br><br><strong>Product:</strong> MobileView<br><strong>Version:</strong> 5.8.20 and earlier<br><strong>Date Created:</strong> August 24, 2025<br><strong>Author:</strong> Research & Development / Arye Shor<br><br><strong>Source Ticket:</strong> 00329229<br><br><strong>Symptom:</strong><br>HUGS Authentication Clients intermittently disconnect, resulting in a white screen accompanied by a generic MobileView error message.<br><br><strong>Problem Description:</strong><br>Authentication clients occasionally display a white screen with a generic error message. This behavior appears to be random and is associated with Event ID 61003 from the source \"Application Frozen.\"<br><br>The error message indicates that the event description cannot be found, suggesting that either the relevant component is not installed or the installation is corrupted. The message advises installing or repairing the component on the local machine.<br><br>If the event originated from another computer, the display information must have been saved with the event.<br><br><strong>Event Details:</strong><br>Application Name: MobileView Client Loader.exe<br>Path: C:\\Program Files (x86)\\AeroScout\\Authentication Client\\MobileView Client Loader.exe<br>Version: 5.7.20.180<br>Process ID: 3788<br>Window Title: Authentication Client<br>Start Time: July 25, 2025, 1:17:09 PM<br>End Time: July 25, 2025, 1:17:18 PM<br>Duration: 00:00:09.073<br>Resolution: Application was unfrozen<br><br>The message resource is present, but the corresponding message was not found in the message table.<br><br><strong>Solution:</strong><br>A patch was provided to the customer and successfully tested on versions 5.7.20 and 5.7.30.<br><br><strong>Reference ID:</strong> 108490<br><strong>Fix:</strong> Authentication Client – Upgrade of embedded WebView component"
 }
+
 
 
 
 	
 ]
+
 
 
 

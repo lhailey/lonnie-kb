@@ -110,12 +110,19 @@
 {
   "question": "Temporary Home Screen Issue: Users Can See Alerts They Are Not Permitted to View",
   "answer": "<br><strong>Last Updated:</strong> December 31, 2025<br><br><strong>Product:</strong> MobileView<br><strong>Version:</strong> 5.8.20 and below<br><strong>Date Created:</strong> December 24, 2025<br><strong>Author:</strong> Research & Development / Arye Shor<br><br><strong>Source Ticket:</strong> 00315772<br><br><strong>Symptom:</strong><br>On the MobileView home screen, users can see the count of pending alerts even when those alerts are not assigned to their permitted departments.<br><br><strong>Impact:</strong><br>This issue affects the alert count displayed on the EM dashboard, but does not grant users access to view or act on alerts outside of their permissions.<br><br><strong>Solution:</strong><br>A defect has been opened and will be addressed in MobileView version 5.8 MR1.<br><br><strong>Defect ID:</strong> 105753<br><strong>Description:</strong> Incorrect alert count displayed on the EM dashboard filter button."
+},
+
+{
+  "question": "Asset with Time Zone Asia/Riyadh Displays Internal Server Error in Asset Details Screen",
+  "answer": "<br><strong>Last Updated:</strong> December 31, 2025<br><br><strong>Product:</strong> AeroScout Links<br><strong>Version:</strong> 19.2.112<br><strong>Date Created:</strong> December 24, 2025<br><strong>Author:</strong> Research & Development / Arye Shor<br><br><strong>Source Ticket:</strong> 00332360<br><br><strong>Symptom:</strong><br>When an asset configured with the time zone Asia/Riyadh87, Asia/Riyadh88, or Asia/Riyadh89 is selected, the Asset Details screen displays an Internal Server Error instead of the asset temperature graph.<br><br><strong>Solution:</strong><br>The issue has been resolved in version 3.0.1.12.<br><br><strong>Defect ID:</strong> 109021<br><strong>Description:</strong> Links Web FE – Asset with time zone Asia/Riyadh87/88/89 caused Internal Server Error in the Asset Details screen.<br><br><strong>Workaround:</strong><br>As a temporary workaround, update the asset time zone to Asia/Riyadh instead of Asia/Riyadh87/88/89."
 }
+
 
 
 
 	
 ]
+
 
 
 

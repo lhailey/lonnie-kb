@@ -120,7 +120,13 @@
 {
   "question": "Unable to Upgrade MobileView Due to a Space Character in the TEMP Folder Path",
   "answer": "<br><strong>Last Updated:</strong> December 17, 2025<br><br><strong>Product:</strong> MobileView<br><strong>Version:</strong> 5.8.20 and below<br><strong>Date Created:</strong> December 17, 2025<br><strong>Author:</strong> Research & Development / Arye Shor<br><br><strong>Source Ticket:</strong> 00343041<br><br><strong>Symptom:</strong><br>During the MobileView upgrade process, the following errors were observed:<br><br>2025-12-15 08:09:59 Old MV version is 5.6.4.118<br>2025-12-15 08:09:59 Failed to find classes by the substring PreUpgrader_ in the jar C:\\Users\\fong%20doug\\AppData\\Local\\Temp\\WZSE3.TMP\\setup.jar<br>2025-12-15 08:09:59 java.nio.file.NoSuchFileException: C:\\Users\\fong%20doug\\AppData\\Local\\Temp\\WZSE3.TMP\\setup.jar<br><br><strong>Problem Description:</strong><br>The upgrade fails when the TEMP directory path contains a space character, preventing the installer from locating required files during the pre-upgrade process.<br><br><strong>Solution:</strong><br><strong>Defect ID:</strong> 110841<br><strong>Related Ticket:</strong> 00343041 (San Francisco General Hospital)<br><strong>Issue:</strong> Unable to upgrade from MobileView version 5.6.4.118.<br><strong>Fix:</strong> Scheduled for inclusion in the MobileView 5.8 MR2 release.<br><br><strong>Workaround:</strong><br>To successfully complete the upgrade before the fix is released:<br>• Modify the environment variables related to the TEMP folder.<br>• Ensure the TEMP folder path does not contain any spaces."
+},
+
+{
+  "question": "Handling Conditions for Zone Status in Dwell Event Specifications",
+  "answer": "<br><strong>Last Updated:</strong> December 16, 2025<br><br><strong>Product:</strong> MobileView<br><strong>Version:</strong> 5.8.20 and below<br><strong>Date Created:</strong> August 24, 2025<br><strong>Author:</strong> Research & Development / Arye Shor<br><br><strong>Source Ticket:</strong> 00330954<br><br><strong>Symptom:</strong><br>Two alerts are triggered simultaneously for the same asset: one from \"number 1_Closed\" and another from \"number 2_Is Open.\"<br><br><strong>Problem Description:</strong><br>The customer is attempting to configure a dwell event in conjunction with a specific zone status. Using a T15ms with a door contact, the zone status can be toggled successfully between \"Closed\" and \"Open.\"<br><br>The issue occurs because the dwell event condition is configured to trigger alerts only when the zone status is either \"Open\" or \"Closed.\" However, MobileView does not correctly enforce this condition and generates both alerts regardless of the configured zone status.<br><br><strong>Solution:</strong><br><strong>Defect ID:</strong> 108821<br><strong>Description:</strong> In MobileView Core, the zone status condition that determines whether an alert should be generated does not function correctly for events of the \"Dwell\" type.<br><br>This defect is resolved in MobileView version 5.8 MR1.<br><br><strong>Workaround:</strong><br>Design assumptions indicate that customers who want alerts based on zone status should select the Zone itself (and not the Exciter) when defining the event.<br><br>If it is necessary to include an exciter in the event conditions (for example, when the zone is large and contains multiple exciters, but only one is located near a door), the following workaround is recommended:<br>• Define an inner zone around the exciter and trigger alerts based on this inner zone.<br><br>If issues arise involving multiple zones, a more advanced workaround should be reviewed and discussed on a case-by-case basis."
 }
+
 
 
 
@@ -128,6 +134,7 @@
 
 	
 ]
+
 
 
 

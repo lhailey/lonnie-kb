@@ -129,7 +129,6 @@ function highlight(text, term) {
   );
 }
 
-
 async function search() {
   const q = document.getElementById("q").value;
   const r = await fetch(`/search?q=${encodeURIComponent(q)}`);
@@ -168,7 +167,6 @@ async function search() {
 	    </details>
 	  `;
 	});
-  
   }
 
   document.getElementById("out").innerHTML = output;
@@ -184,14 +182,6 @@ window.addEventListener("load", () => {
 
 </body>
 </html>
-
-
-
-
-
-
-
-
 
 
 

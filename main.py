@@ -25,7 +25,7 @@ def home():
 
 
 @app.get("/search")
-def search(q: str):
+def search(q: str = ""):
     q = q.lower().rstrip("s")
     results = []
 
@@ -42,6 +42,7 @@ def search(q: str):
             results.append(item)
 
     return results
+
 
 
 

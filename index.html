@@ -124,7 +124,8 @@ function highlight(text, term) {
   const regex = new RegExp(`\\b(${base}s?)\\b`, "gi");
   return text.replace(
     regex,
-    `<span style="background-color: yellow; font-weight: bold;">$1</span>`
+    //`<span style="background-color: yellow; font-weight: bold;">$1</span>`
+    `<span style="background-color:#fee2e2; color:#7f1d1d; font-weight:600; padding:2px 4px; border-radius:3px;">$1</span>`
   );
 }
 
@@ -183,6 +184,7 @@ window.addEventListener("load", () => {
 
 </body>
 </html>
+
 
 
 

@@ -25,9 +25,15 @@ def home():
 
 
 @app.get("/search")
-def search(q: str = ""):
-    q = q.lower().rstrip("s")
+def search(q: str):
+    q = q.lower().strip()
+    
+    if not q:
+        return []
+    
+    q = q.rstrip("s")
     results = []
+    
 
     # build word-boundary regex: \bwork\b
     pattern = re.compile(rf"\b{re.escape(q)}s?\b")
@@ -42,6 +48,7 @@ def search(q: str = ""):
             results.append(item)
 
     return results
+
 
 
 

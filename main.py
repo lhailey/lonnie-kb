@@ -36,12 +36,13 @@ def search(q: str):
         question = item.get("question", "").lower()
         answer = item.get("answer", "").lower()
 
-        # if pattern.search(question) or pattern.search(answer):
+        if pattern.search(question) or pattern.search(answer):
         # change to this to remove cluttered results
-        if pattern.search(question):
+        # if pattern.search(question):
             results.append(item)
 
     return results
+
 
 
 

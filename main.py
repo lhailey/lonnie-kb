@@ -35,7 +35,7 @@ def search(q: str):
 
     # replace above with this
     if q.isdigit(): 
-    return []
+        return []
 
     # replace this with below
     # if not q or (len(q) < 3 and q not in WHITELIST):
@@ -43,7 +43,7 @@ def search(q: str):
 
     # replace code allows whitelist and ignores stopwords
     if not q or q in STOPWORDS or (len(q) < 3 and q not in WHITELIST):
-    return []
+        return []
 
     
     q = q.rstrip("s")
@@ -62,6 +62,7 @@ def search(q: str):
             results.append(item)
 
     return results
+
 
 
 

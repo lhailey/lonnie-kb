@@ -50,7 +50,9 @@ def search(q: str):
     results = []
     
     # build word-boundary regex: \bwork\b
-    pattern = re.compile(rf"\b{re.escape(q)}s?\b")
+    # pattern = re.compile(rf"\b{re.escape(q)}s?\b")
+    pattern = re.compile(rf"\b{re.escape(q)}\w*\b")
+
 
     for item in kb:
         question = item.get("question", "").lower()
@@ -62,6 +64,7 @@ def search(q: str):
             results.append(item)
 
     return results
+
 
 
 

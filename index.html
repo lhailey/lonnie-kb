@@ -115,8 +115,18 @@
 <script>
 
 /* 🔹 Auto-warm Render on page load */
-fetch("/health").catch(() => {});
+// remove this
+//fetch("/health").catch(() => {});
 
+// add this
+fetch("/health")
+  .then(() => {
+    const msg = document.getElementById("loading-msg");
+    if (msg) msg.style.display = "none";
+  })
+  .catch(() => {});
+
+	
 function highlight(text, term) {
   if (!term) return text;
 
@@ -177,15 +187,19 @@ async function search() {
 }
 
 // Hide loading message once page finishes loading
-window.addEventListener("load", () => {
+// remove this block entirely
+
+/* window.addEventListener("load", () => {
   const msg = document.getElementById("loading-msg");
   if (msg) msg.style.display = "none";
 });
-
+*/
+	
 </script>
 
 </body>
 </html>
+
 
 
 

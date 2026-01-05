@@ -22,6 +22,7 @@ def home():
         return f.read()
 
 WHITELIST = {"ha", "mv", "db", "ip", "rf", "sql", "ale", "vm", "kb", "rma"}
+STOPWORDS = {"and", "or", "the", "to", "of", "in", "on", "at", "for", "with"}
 
 @app.get("/search")
 def search(q: str):
@@ -36,13 +37,14 @@ def search(q: str):
     if q.isdigit(): 
     return []
 
-    if not q or (len(q) < 3 and q not in WHITELIST):
-        return []
-    # what this fixes
-    # 1, 2, 3 → ❌ no results
-    # to, at, or → ❌ no results
-    # ha, mv, db, ip, rf → ✅ allowed
-    # normal words (server, license) → ✅ allowed
+    # replace this with below
+    # if not q or (len(q) < 3 and q not in WHITELIST):
+    # return []
+
+    # replace code allows whitelist and ignores stopwords
+    if not q or q in STOPWORDS or (len(q) < 3 and q not in WHITELIST):
+    return []
+
     
     q = q.rstrip("s")
     results = []
@@ -60,6 +62,7 @@ def search(q: str):
             results.append(item)
 
     return results
+
 
 
 

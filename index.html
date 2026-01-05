@@ -135,7 +135,9 @@ function highlight(text, term) {
     ? term.slice(0, -1)
     : term;
   // match singular OR plural
-  const regex = new RegExp(`\\b(${base}s?)\\b`, "gi");
+  // const regex = new RegExp(`\\b(${base}s?)\\b`, "gi");
+  const regex = new RegExp(`\\b(${base}\\w*)\\b`, "gi");
+	
   return text.replace(
     regex,
     //`<span style="background-color: yellow; font-weight: bold;">$1</span>`
@@ -199,6 +201,7 @@ async function search() {
 
 </body>
 </html>
+
 
 
 

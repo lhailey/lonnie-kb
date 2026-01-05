@@ -113,6 +113,10 @@
 </div>
 	
 <script>
+
+/* 🔹 Auto-warm Render on page load */
+fetch("/health").catch(() => {});
+
 function highlight(text, term) {
   if (!term) return text;
 
@@ -182,6 +186,7 @@ window.addEventListener("load", () => {
 
 </body>
 </html>
+
 
 
 

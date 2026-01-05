@@ -21,7 +21,7 @@ def home():
     with open("index.html", "r", encoding="utf-8") as f:
         return f.read()
 
-WHITELIST = {"ha", "mv", "db", "ip", "rf", "sql", "ale", "vm", "kb", "rma", "hm", "dm"}
+WHITELIST = {"ha", "mv", "db", "ip", "rf", "sql", "ale", "vm", "kb", "rma", "hm", "dm", "t15"}
 STOPWORDS = {"and", "or", "the", "to", "of", "in", "on", "at", "for", "with", "us", "use"}
 
 @app.get("/search")
@@ -51,7 +51,8 @@ def search(q: str):
     
     # build word-boundary regex: \bwork\b
     # pattern = re.compile(rf"\b{re.escape(q)}s?\b")
-    pattern = re.compile(rf"\b{re.escape(q)}\w*\b")
+    # pattern = re.compile(rf"\b{re.escape(q)}\w*\b")
+    pattern = re.compile(rf"\b{re.escape(q)}\w*\b", re.IGNORECASE)
 
 
     for item in kb:
@@ -64,6 +65,7 @@ def search(q: str):
             results.append(item)
 
     return results
+
 
 
 

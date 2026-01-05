@@ -21,13 +21,28 @@ def home():
     with open("index.html", "r", encoding="utf-8") as f:
         return f.read()
 
+WHITELIST = {"ha", "mv", "db", "ip", "rf", "sql", "ale", "vm", "kb", "rma"}
+
 @app.get("/search")
 def search(q: str):
     q = q.lower().strip()
-    if q.isdigit(): return []
+    
+    # replace this  
+    # if q.isdigit(): return []
+    # if not q or len(q) < 3:
+    #    return []
 
-    if not q or len(q) < 3:
+    # replace above with this
+    if q.isdigit(): 
+    return []
+
+    if not q or (len(q) < 3 and q not in WHITELIST):
         return []
+    # what this fixes
+    # 1, 2, 3 → ❌ no results
+    # to, at, or → ❌ no results
+    # ha, mv, db, ip, rf → ✅ allowed
+    # normal words (server, license) → ✅ allowed
     
     q = q.rstrip("s")
     results = []
@@ -45,5 +60,6 @@ def search(q: str):
             results.append(item)
 
     return results
+
 
 

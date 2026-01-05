@@ -6,7 +6,12 @@ import re
 
 app = FastAPI()
 
-@app.get("/health")
+
+# change this
+# @app.get("/health")
+# to this
+@app.api_route("/health", methods=["GET", "HEAD"])
+
 def health():
     return {"status": "ok"}
 
@@ -62,6 +67,7 @@ def search(q: str):
             results.append(item)
 
     return results
+
 
 
 

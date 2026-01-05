@@ -21,8 +21,8 @@ def home():
     with open("index.html", "r", encoding="utf-8") as f:
         return f.read()
 
-WHITELIST = {"ha", "mv", "db", "ip", "rf", "sql", "ale", "vm", "kb", "rma", "hm", "dm", "us"}
-STOPWORDS = {"and", "or", "the", "to", "of", "in", "on", "at", "for", "with"}
+WHITELIST = {"ha", "mv", "db", "ip", "rf", "sql", "ale", "vm", "kb", "rma", "hm", "dm"}
+STOPWORDS = {"and", "or", "the", "to", "of", "in", "on", "at", "for", "with", "us", "use"}
 
 @app.get("/search")
 def search(q: str):
@@ -62,6 +62,7 @@ def search(q: str):
             results.append(item)
 
     return results
+
 
 
 

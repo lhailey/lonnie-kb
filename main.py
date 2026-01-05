@@ -52,7 +52,14 @@ def search(q: str):
     # build word-boundary regex: \bwork\b
     # pattern = re.compile(rf"\b{re.escape(q)}s?\b")
     # pattern = re.compile(rf"\b{re.escape(q)}\w*\b")
-    pattern = re.compile(rf"\b{re.escape(q)}\w*\b", re.IGNORECASE)
+    # pattern = re.compile(rf"\b{re.escape(q)}\w*\b", re.IGNORECASE)
+
+    if q == "t15":
+        pattern = re.compile(rf"\b{re.escape(q)}\w*\b", re.IGNORECASE)
+    elif q == "ha":
+        pattern = re.compile(rf"\b{re.escape(q)}\b", re.IGNORECASE)
+    else:
+        pattern = re.compile(rf"\b{re.escape(q)}s?\b", re.IGNORECASE)
 
 
     for item in kb:
@@ -65,6 +72,7 @@ def search(q: str):
             results.append(item)
 
     return results
+
 
 
 

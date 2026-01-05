@@ -26,7 +26,7 @@ def search(q: str):
     q = q.lower().strip()
     if q.isdigit(): return []
 
-    if not q:
+    if not q or len(q) < 2:
         return []
     
     q = q.rstrip("s")
@@ -45,3 +45,4 @@ def search(q: str):
             results.append(item)
 
     return results
+

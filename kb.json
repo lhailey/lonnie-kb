@@ -117,11 +117,86 @@
 
 {
   "question": "Managing Multiple ALE Engines, Tag Visibility, and Wireless Tag Certificate Deployment in MobileView",
-  "answer": "<strong>Overview:</strong><br>This KB entry documents a review of a MobileView deployment using multiple ALE engines, shared RF environments with neighboring facilities, tag visibility behavior, firmware considerations, and the newer Wireless Tag Configuration feature used for certificate and Wi-Fi configuration management.<br><br><strong>ALE Architecture and Map Distribution:</strong><br>The system uses two ALE engines (ALE1 and ALE2) to distribute processing load due to a large number of maps and large map sizes.<br><br>• Approximately half of the maps are assigned to ALE1<br>• The remaining maps are assigned to ALE2<br>• Both ALEs connect to the same MobileView servers<br><br>This design helps maintain performance and scalability in large environments.<br><br><strong>Cisco Connector Verification:</strong><br>Both ALE engines were verified to be using the same Cisco Spaces / Cisco connector IP address.<br><br>• Primary connector was confirmed as connected and healthy<br>• Successful reconnection status was observed on both ALEs<br><br><strong>MobileView High Availability Validation:</strong><br>The MobileView environment consists of a Primary and Passive (HA) server pair.<br><br>• Primary MobileView server is actively connected to the engine through the gateway<br>• Passive MobileView server correctly shows no active engine connection<br>• Gateway-to-engine communication was verified as healthy<br><br><strong>Tag Communication and Visibility:</strong><br>The system is actively communicating with deployed tags, primarily T15e tags.<br><br>Tags from a neighboring facility may appear in the system due to shared RF coverage and overlapping access points. This behavior is expected in shared or adjacent environments.<br><br><strong>Mitigation for Seeing Neighboring Facility Tags:</strong><br>If unwanted tag visibility becomes an issue, it can be mitigated by changing the Gateway ID:<br><br>• Many facilities leave the Gateway ID at the default value (commonly ID 1)<br>• Assigning a unique Gateway ID (for example, 900 or 2000) ensures only local tags communicate with local gateways<br>• Tags from neighboring facilities will no longer appear after this change<br><br><strong>Firmware Observations:</strong><br>• T15e tags are the primary tag type in use<br>• Some tags observed at older firmware levels likely belong to neighboring facilities or are offline<br>• Latest firmware versions should be applied where applicable<br>• T15h tags were also identified and require firmware upgrades as needed<br><br><strong>Instant Notifier – Chrome Extension:</strong><br>The Instant Notifier is now delivered as a Chrome browser extension rather than a standalone application.<br><br>Key points:<br>• No separate application installation required<br>• Appears automatically when MobileView is open in Chrome<br>• Instant notifications pop up directly in the browser<br>• Recommended to inform users ahead of upgrades so they are aware of the UI change<br><br><strong>Wireless Tag Configuration – Certificate and Wi-Fi Management:</strong><br>Newer MobileView versions include the Wireless Tag Configuration feature, allowing centralized management of Wi-Fi settings and certificates.<br><br><strong>Capabilities:</strong><br>• Create one or more wireless configuration templates<br>• Define SSID and Wi-Fi credentials<br>• Specify application server address<br>• Attach root certificates to the configuration<br>• Assign configurations by tag category<br><br><strong>How It Works:</strong><br>• A wireless configuration template is created under Administration → System → Wireless Tag Configuration<br>• Templates are associated with tag categories<br>• As bi-directional tags sync, they automatically receive Wi-Fi and certificate updates from MobileView<br><br>This eliminates the need to update certificates tag-by-tag using Deployment Manager, which is especially beneficial in large environments.<br><br><strong>Important Consideration (Certificate Update Order):</strong><br>There is an open question regarding update sequencing:<br><br>• Whether server certificates should be updated before pushing certificates to tags<br>• Or whether tags should be updated first before server certificate changes<br><br>This is considered a \"chicken-and-egg\" scenario and confirmation from R&D / Product Management is pending.<br><br><strong>Current Best Practice (Pending Confirmation):</strong><br>• Prepare both old and new certificates in advance<br>• Update tags first using Wireless Tag Configuration<br>• Then update server certificates after tag updates complete<br><br><strong>Additional Notes:</strong><br>• Wireless Tag Configuration was not available in some early 5.7 releases but is present in this system’s version<br>• This feature significantly reduces operational overhead for large deployments<br>• Deployment Manager remains cumbersome for large-scale certificate changes and should be avoided when possible<br><br><strong>Status:</strong><br>System health, reporting structure, and integrations were validated and found to be operating correctly."
+  "answer": "Overview:\n\
+This KB documents a review of a MobileView deployment using multiple ALE engines, shared RF environments with neighboring facilities, tag visibility behavior, firmware considerations, and the Wireless Tag Configuration feature used for certificate and Wi-Fi management.\n\n\
+ALE Architecture and Map Distribution:\n\
+The system uses two ALE engines (ALE1 and ALE2) to distribute processing load due to a large number of maps and large map sizes.\n\
+\n\
+• Approximately half of the maps are assigned to ALE1\n\
+• The remaining maps are assigned to ALE2\n\
+• Both ALEs connect to the same MobileView servers\n\
+\n\
+This design helps maintain performance and scalability in large environments.\n\n\
+Cisco Connector Verification:\n\
+Both ALE engines were verified to be using the same Cisco Spaces / Cisco connector IP address.\n\
+\n\
+• Primary connector was confirmed as connected and healthy\n\
+• Successful reconnection status was observed on both ALEs\n\n\
+MobileView High Availability Validation:\n\
+The MobileView environment consists of a Primary and Passive (HA) server pair.\n\
+\n\
+• Primary MobileView server is actively connected to the engine through the gateway\n\
+• Passive MobileView server correctly shows no active engine connection\n\
+• Gateway-to-engine communication was verified as healthy\n\n\
+Tag Communication and Visibility:\n\
+The system is actively communicating with deployed tags, primarily T15e tags.\n\
+\n\
+Tags from a neighboring facility may appear due to shared RF coverage and overlapping access points. This is expected behavior in adjacent or shared environments.\n\n\
+Mitigation for Seeing Neighboring Facility Tags:\n\
+If unwanted tag visibility becomes an issue, it can be mitigated by changing the Gateway ID.\n\
+\n\
+• Many facilities leave the Gateway ID at the default value (commonly ID 1)\n\
+• Assigning a unique Gateway ID (for example, 900 or 2000) ensures only local tags communicate with local gateways\n\
+• Tags from neighboring facilities will no longer appear after this change\n\n\
+Firmware Observations:\n\
+• T15e tags are the primary tag type in use\n\
+• Some tags observed at older firmware levels likely belong to neighboring facilities or are offline\n\
+• Latest firmware versions should be applied where applicable\n\
+• T15h tags were also identified and require firmware upgrades as needed\n\n\
+Instant Notifier – Chrome Extension:\n\
+The Instant Notifier is now delivered as a Chrome browser extension rather than a standalone application.\n\
+\n\
+Key points:\n\
+• No separate application installation required\n\
+• Appears automatically when MobileView is open in Chrome\n\
+• Instant notifications pop up directly in the browser\n\
+• Users should be informed ahead of upgrades about this UI change\n\n\
+Wireless Tag Configuration – Certificate and Wi-Fi Management:\n\
+Newer MobileView versions include the Wireless Tag Configuration feature, allowing centralized management of Wi-Fi settings and certificates.\n\
+\n\
+Capabilities:\n\
+• Create one or more wireless configuration templates\n\
+• Define SSID and Wi-Fi credentials\n\
+• Specify application server address\n\
+• Attach root certificates\n\
+• Assign configurations by tag category\n\n\
+How It Works:\n\
+• Create a wireless configuration template under Administration → System → Wireless Tag Configuration\n\
+• Associate the template with tag categories\n\
+• As bi-directional tags sync, they automatically receive Wi-Fi and certificate updates\n\n\
+Important Consideration (Certificate Update Order):\n\
+There is an open sequencing question:\n\
+\n\
+• Whether server certificates should be updated before pushing certificates to tags\n\
+• Or whether tags should be updated first before server certificate changes\n\
+\n\
+This is a chicken-and-egg scenario and confirmation from R&D / Product Management is pending.\n\n\
+Current Best Practice (Pending Confirmation):\n\
+• Prepare both old and new certificates in advance\n\
+• Update tags first using Wireless Tag Configuration\n\
+• Update server certificates after tag updates complete\n\n\
+Additional Notes:\n\
+• Wireless Tag Configuration was not available in early 5.7 releases but is present in this system\n\
+• This feature significantly reduces operational overhead for large deployments\n\
+• Deployment Manager is not recommended for large-scale certificate changes\n\n\
+Status:\n\
+System health, reporting structure, and integrations were validated and found to be operating correctly."
 }
+
 
 	
 ]
+
 
 
 

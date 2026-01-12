@@ -116,7 +116,7 @@
 },
 
 {
-  "question": "Managing Multiple ALE Engines, Tag Visibility, and Wireless Tag Configuration in MobileView",
+  "question": "Upgrade Upgrading ALE and MV SA",
   "answer_lines": [
     "Overview:",
     "This entry documents a system review of a MobileView deployment using multiple ALE engines, shared RF environments, tag visibility behavior, Instant Notifier changes, and the newer Wireless Tag Configuration feature for certificates and Wi-Fi management.",
@@ -212,6 +212,7 @@
 	
 	
 ]
+
 
 
 

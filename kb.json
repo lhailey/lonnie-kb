@@ -121,7 +121,7 @@
 },
 
 {
-  "question": "Managing Multiple ALE Engines, Tag Visibility, and Wireless Tag Certificate Deployment in MobileView",
+  "question": "Genesis Exodus",
   "answer_lines": [
     "Overview:",
     "This KB documents a review of a MobileView deployment using multiple ALE engines, shared RF environments with neighboring facilities, tag visibility behavior, firmware considerations, and the Wireless Tag Configuration feature used for certificate and Wi-Fi management.",
@@ -210,11 +210,10 @@
     "",
     "Status:",
     "System health, reporting structure, and integrations were validated and found to be operating correctly."
+  ]
 }
-	
-
-	
 ]
+
 
 
 

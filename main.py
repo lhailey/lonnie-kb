@@ -11,6 +11,8 @@ def health():
     return {"status": "ok"}
 
 app.mount("/images", StaticFiles(directory="images"), name="images")
+app.mount("/docs", StaticFiles(directory="docs"), name="docs")
+
 
 # Load the knowledge base
 with open("kb.json", "r", encoding="utf-8") as f:
@@ -72,6 +74,7 @@ def search(q: str):
             results.append(item)
 
     return results
+
 
 
 

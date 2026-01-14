@@ -115,9 +115,10 @@
   "images": ["one year report generation.png"]	
 },
 	
+
 {
-  "question": "MobileView / AeroScout Upgrade Runbook",
-  "answer": "<b>Standard MobileView / AeroScout Upgrade Procedure (PDF)</b><br><br><a href=\"/docs/upgrade_mv_ale.pdf\" target=\"_blank\">📄 Open MobileView / AeroScout Upgrade Runbook (PDF)</a>"
+  "question": "MobileView / AeroScout Upgrade",
+  "answer": "<b>MobileView / AeroScout Upgrade Procedure (PDF)</b><br><br><a href=\"/docs/upgrade_mv_ale.pdf\" target=\"_blank\">📄 Open MobileView / AeroScout Upgrade (PDF)</a>"
 },
 
 	
@@ -128,6 +129,7 @@
 
 
 ]
+
 
 
 

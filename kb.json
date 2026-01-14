@@ -116,31 +116,15 @@
 },
 
 {
-  "question": "MobileView AeroScout Upgrade",
-  "answer": "<b>Standard MobileView / AeroScout Upgrade Procedure (PDF)</b><br><br>This document provides a step-by-step runbook for performing a standard in-place MobileView / AeroScout (ALE) upgrade.<br><br><a href=\"/docs/upgrade_mv_ale.pdf\" target=\"_blank\">📄 Open Upgrade Runbook (PDF)</a>"
+  "question": "MobileView / AeroScout Upgrade Runbook",
+  "answer": "<button onclick=\"window.open('/docs/upgrade_mv_ale.pdf','_blank')\" style=\"padding:6px 12px; font-size:14px; cursor:pointer;\">Open Upgrade (PDF)</button>"
 },
-
+	
 {
   "question": "Cisco Upgrade",
   "answer": "<b>Cisco MobileView / AeroScout Upgrade Procedure (PDF)</b><br><br>Cisco Upgrade<br><br><a href=\"/docs/cisco_upgrade_crystal_run.pdf\" target=\"_blank\">📄 Open Cisco Upgrade (PDF)</a>"
 }
 
 ]
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 

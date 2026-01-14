@@ -114,18 +114,17 @@
   "answer": "<br><strong>Last Updated:</strong> December 16, 2025<br><br><strong>Product:</strong> MobileView<br><strong>Version:</strong> 5.6 and above<br><strong>Date Created:</strong> August 28, 2025<br><strong>Author:</strong> Research & Development / Arye Shor<br><br><strong>Source Ticket:</strong> 00332149<br><br><strong>Symptom:</strong><br>Executing a MeasurementHistoryAuditReport.xml for approximately 50 million records results in an out-of-memory failure and causes the MobileView report service to crash.<br><br><strong>Problem Description:</strong><br>MD Anderson was able to successfully generate one-year reports for a single asset using MobileView version 5.4. After upgrading to version 5.6, running a similar one-year report caused the report service to crash.<br><br>Investigation revealed that the value of <em>maxNumOfResults</em> in MeasurementHistoryArchiveReport.xml had been increased from 50,000 records to 50,000,000 records, which exceeded the available JVM memory and resulted in an out-of-memory error.<br><br><strong>Solution:</strong><br>During initial troubleshooting, the report-service JVM maximum memory (XMX) was increased to 6144 MB, which resolved the immediate issue. However, this approach is not recommended and is unnecessary in most cases.<br><br>The correct and supported method for increasing the number of rows returned by a report is to use the JMX console under the asset-management service.<br><br><strong>Recommended Procedure:</strong><br>1. Open the JMX console for the asset-management service.<br>2. Navigate to <em>reportsJMXServiceImpl</em>.<br>3. Select <em>overrideReportMaxResults</em>.<br>4. Retrieve the report ID from the report XML.<br>5. Reload the report templates.<br>6. Set the required number of records for the report.<br><br><strong>Additional Notes:</strong><br>If an out-of-memory condition persists after applying the JMX override, the report-service XMX memory size may be increased temporarily as needed.<br><br>Be aware that MobileView upgrades override JVM memory settings, so any custom XMX value must be reviewed and re-applied after an upgrade.<br><br><strong>Reference:</strong><br>See attached screenshot for JMX configuration example.",
   "images": ["one year report generation.png"]	
 },
-
 {
   "question": "MobileView / AeroScout Upgrade Runbook",
-  "answer": "<button onclick=\"window.open('/docs/upgrade_mv_ale.pdf','_blank')\" style=\"padding:6px 12px; font-size:14px; cursor:pointer;\">Open Upgrade (PDF)</button>"
+  "answer": "<a href=\"/docs/upgrade_mv_ale.pdf\" target=\"_blank\">📄 Open Upgrade (PDF)</a>"
 },
-	
 {
   "question": "Cisco Upgrade",
   "answer": "<br>a href=\"/docs/cisco_upgrade_crystal_run.pdf\" target=\"_blank\">📄 Open Cisco Upgrade (PDF)</a>"
 }
 
 ]
+
 
 
 

@@ -115,13 +115,6 @@
   "images": ["one year report generation.png"]	
 },
 	
-
-{
-  "question": "MobileView / AeroScout Upgrade",
-  "answer": "<b>MobileView / AeroScout Upgrade Procedure (PDF)</b><br><br><a href=\"/docs/upgrade_mv_ale.pdf\" target=\"_blank\">📄 Open MobileView / AeroScout Upgrade (PDF)</a>"
-},
-
-	
 {
   "question": "Cisco Upgrade",
   "answer": "<b>Cisco MobileView / AeroScout Upgrade Procedure (PDF)</b><br><br><a href=\"/docs/cisco_upgrade_crystal_run.pdf\" target=\"_blank\">📄 Open Cisco Upgrade Runbook (PDF)</a>"
@@ -129,6 +122,7 @@
 
 
 ]
+
 
 
 

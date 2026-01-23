@@ -1,19 +1,78 @@
 
-Testing this is from local to remote
 
----
+
+Start with Upgrades
+
+------------------------------------------------------------
+
+Upgrade
+
+**Account Name:** Hospital Corporation of America (HCA Inc.)
+Create upgrade spreadsheet and SOW
+1/23/26 - I sent Jeremy a comment telling him I'm working on it
+
+**Ticket Number:** 00346643
+**Contact Name:** Jeremy Clark
+**Subject:** Request to upgrade HUGS WiFi from 5.6.51.4.4 to 5.7 MR1
+**Status:** Researching
+
+------------------------------------------------------------
+
+Upgrade
+
+**Account Name:** Johnson Controls, Inc.
 
 Update spreadsheet with MR1 download link
 send INF Plus documentation
 send MR1 documentation
  
 **Ticket Number:** 00325722
-**Account Name:** Johnson Controls, Inc.
 **Contact Name:** Kyle Francoeur
 **Subject:** Upgrade system from 5.4 to 5.7
 **Status:** Session is Scheduled
 
----
+------------------------------------------------------------
+
+Upgrade
+
+**Account Name:** Beaumont Hospital – Farmington Hills
+
+Create upgrade spreadsheet and SOW
+
+**Ticket Number:** 00345755
+**Contact Name:** Michael Tarquini
+**Subject:** MV / ALE upgrade request
+**Status:** Customer Reply Needed
+Corewell is in the middle of a very large Hugs conversion at their  oyal Oak facility 
+and prior to it going live (March-ish) they want to upgrade their system.
+
+------------------------------------------------------------
+
+Upgrade
+
+**Account Name:** Yale University
+
+Work on upgrade spreadsheet for Akram. Spreadsheet was updated. 
+Send:Instant Notifier and Twilio documentation
+
+Notes:
+Akram: Upgrade spreadsheet and send 
+Akram: Confirm upgrade timing and certificate renewal window
+
+**Ticket Number:** 00344925
+**Contact Name:** Akram York
+**Subject:** ALE / MobileView upgrade from 5.7 to 5.8
+**Status:** Customer Reply Needed
+
+Akram and Kevin Cert Questions:
+
+Kevin confirmed certificates can be pushed to multiple tags using MobileView’s Wireless TagConfiguration templates as tags sync.
+You can create a template, set the Wi-Fi, the credentials, the SSID, the application server address, and then you can attach a certificate.”
+
+Kevin: “Now the trick is — and I’m still waiting for an answer from R&D or Product Management —
+if you change the cert on the server first, will you still be able to communicate at the level to push down the cert to the tag.”
+
+------------------------------------------------------------
 
 Lonnie to Monitor. Probably can close.
 
@@ -28,18 +87,28 @@ Sorry for the delay!
 **Subject:** Customer’s TAG is out of warranty – purchase replacement
 **Status:** Researching
 
----
+------------------------------------------------------------
 
-Waiting on cust and damon for 
+**Account Name:** Trinity Health Pensacola
+
 HUGS tags from another facility are displaying in Livonia MV
 
 **Ticket Number:** 00344011
-**Account Name:** Trinity Health Pensacola
 **Contact Name:** Charles Wallace
 **Subject:** Escalated tag issue (Livonia / Grand Rapids)
 **Status:** Customer Reply Needed 2
 
----
+------------------------------------------------------------
+
+1/23/26 - Issue is resolved after customer updated RAM
+
+**Ticket Number:** 00346679
+**Account Name:** Tech Systems, Inc. – Duluth
+**Contact Name:** James Wright
+**Subject:** HUGS supervision alarms occurring nightly (1–1:30 AM)
+**Status:** Customer Reply Needed
+
+------------------------------------------------------------
 
 Waiting on cust to consult with IT re: permission issues
 
@@ -49,28 +118,8 @@ Waiting on cust to consult with IT re: permission issues
 **Subject:** User cannot generate report previously accessible
 **Status:** Customer Reply Needed
 
----
+------------------------------------------------------------
 
-Work on upgrade spreadsheet for Akram. Spreadsheet was updated. 
-Send:Instant Notifier and Twilio documentation
-Akram: Upgrade spreadsheet and send 
-Akram: Confirm upgrade timing and certificate renewal window
-
-**Ticket Number:** 00344925
-**Account Name:** Yale University
-**Contact Name:** Akram York
-**Subject:** ALE / MobileView upgrade from 5.7 to 5.8
-**Status:** Customer Reply Needed
-
-Akram and Kevin Cert Questions:
-
-Kevin confirmed certificates can be pushed to multiple tags using MobileView’s Wireless TagConfiguration templates as tags sync.
-You can create a template, set the Wi-Fi, the credentials, the SSID, the application server address, and then you can attach a certificate.”
-
-Kevin: “Now the trick is — and I’m still waiting for an answer from R&D or Product Management —
-if you change the cert on the server first, will you still be able to communicate at the level to push down the cert to the tag.”
-
----
 
 Waiting on Corey for the status of this Ticket
 
@@ -80,29 +129,20 @@ Waiting on Corey for the status of this Ticket
 **Subject:** Authentication Client and Web HUGS login slowness
 **Status:** Customer Reply Needed
 
----
+------------------------------------------------------------
 
-Create upgrade spreadsheet and SOW
-
-**Ticket Number:** 00345755
-**Account Name:** Beaumont Hospital – Farmington Hills
-**Contact Name:** Michael Tarquini
-**Subject:** MV / ALE upgrade request
-**Status:** Customer Reply Needed
-Corewell is in the middle of a very large Hugs conversion at their Royal Oak facility and prior to it going live (March-ish) they want to upgrade their system.
-
----
+**Account Name:** Lee Health
 
 Review Engine Logs for errors.
 
 **Ticket Number:** 00346530
-**Account Name:** Lee Health
 **Contact Name:** Peter Sudar
 **Subject:** ALE server errors
 **Status:** Researching
 This all occurred 1/20/2026 around 11 EST ish
 
----
+------------------------------------------------------------
+
 Close in 48 hours
 
 **Ticket Number:** 00346538
@@ -111,39 +151,26 @@ Close in 48 hours
 **Subject:** “Patient Protection Audit” report disabled
 **Status:** Customer Reply Needed
 
----
-
-Create upgrade spreadsheet and SOW
-
-**Ticket Number:** 00346643
-**Account Name:** Hospital Corporation of America (HCA Inc.)
-**Contact Name:** Jeremy Clark
-**Subject:** Request to upgrade HUGS WiFi from 5.6.51.4.4 to 5.7 MR1
-**Status:** Researching
-
----
-
-Waiting on customer to upgrade their vm
-
-**Ticket Number:** 00346679
-**Account Name:** Tech Systems, Inc. – Duluth
-**Contact Name:** James Wright
-**Subject:** HUGS supervision alarms occurring nightly (1–1:30 AM)
-**Status:** Customer Reply Needed
+------------------------------------------------------------
 
 
----
 I sent email telling customer that I will check
 
 **Ticket Number:** 00346759
 **Account Name:** UZ Gent Universitair Ziekenhuis Gent
 **Contact Name:** Stijn Hendrickx
 **Subject:** ALE availability on Microsoft Hyper-V
+Questions on testing. 5.8 MRI instructions more generic
+(so provide instructions)
+
 **Status:** Researching
 
----
+------------------------------------------------------------
 
-Waiting on Damon a, I sent him dm
+1/23 - I sent Mohammad email asking him to do random checks
+I also sent email to securitas team telling them what I did
+
+Waiting on Damon, I sent him dm
 
 **Ticket Number:** 00346766
 **Account Name:** Tech Systems, Inc. – Duluth
@@ -151,7 +178,7 @@ Waiting on Damon a, I sent him dm
 **Subject:** HUGS tags generate tamper alarms immediately when strap inserted
 **Status:** Researching
 
----
+------------------------------------------------------------
 
 Waiting on date for zoom session
 
@@ -161,9 +188,10 @@ Waiting on date for zoom session
 **Subject:** First-time Authentication Client login issues
 **Status:** Info Provided
 
----
+------------------------------------------------------------
 
 Waiting on SR 
+They added ticket on 1/22 - Review logs
 
 **Ticket Number:** 00346811
 **Account Name:** Penn Presbyterian Medical Center
@@ -171,5 +199,17 @@ Waiting on SR
 **Subject:** Bean missing from JMX console in Asset Manager
 **Status:** Customer Reply Needed
 
----
+Asset Manager is not initialized. Look at logs to see if its there
 
+------------------------------------------------------------
+
+1/23 - Ask for SR
+00346912 - Assistance Needed for New Workstation Setup
+
+Owensboro Health, Inc.
+jeff Shutt
+
+We're re-imaging a HUGS MobileView monitoring station and 
+need assistance with installs and configuration.
+
+------------------------------------------------------------

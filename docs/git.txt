@@ -40,6 +40,45 @@ git status
 
 
 ------------------------------------------------
+Check Who Has the Latest kb.json
+
+1) Go to the repo
+cd C:\Projects\lonnie-kb
+
+2) Make sure you’re on main
+git checkout main
+
+3) Get latest info from GitHub (no changes yet)
+git fetch origin
+
+4) Check status
+git status
+
+How to read the result (this is the answer)
+
+If you see
+
+up to date with 'origin/main'
+nothing to commit, working tree clean
+
+
+→ LOCAL and REMOTE are the same
+
+If you see
+
+modified: kb.json
+
+
+→ LOCAL has the latest kb.json
+
+If you see
+
+Your branch is behind 'origin/main'
+
+
+→ REMOTE (GitHub) has the latest
+
+
 
 Git — Who Has the Latest? (Local vs Remote) — Step by Step
 

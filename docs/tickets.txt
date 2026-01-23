@@ -1,0 +1,173 @@
+
+---
+
+Update spreadsheet with MR1 download link
+send INF Plus documentation
+send MR1 documentation
+ 
+**Ticket Number:** 00325722
+**Account Name:** Johnson Controls, Inc.
+**Contact Name:** Kyle Francoeur
+**Subject:** Upgrade system from 5.4 to 5.7
+**Status:** Session is Scheduled
+
+---
+
+Lonnie to Monitor. Probably can close.
+
+Securitas said, Hi Jen,
+The new logger was shipped last week. Let me hunt for the tracking number 
+and forward it to you once I get it.
+Sorry for the delay!
+
+**Ticket Number:** 00341591
+**Account Name:** Unity Point Health
+**Contact Name:** Jen Tjepkes
+**Subject:** Customer’s TAG is out of warranty – purchase replacement
+**Status:** Researching
+
+---
+
+Waiting on cust and damon for 
+HUGS tags from another facility are displaying in Livonia MV
+
+**Ticket Number:** 00344011
+**Account Name:** Trinity Health Pensacola
+**Contact Name:** Charles Wallace
+**Subject:** Escalated tag issue (Livonia / Grand Rapids)
+**Status:** Customer Reply Needed 2
+
+---
+
+Waiting on cust to consult with IT re: permission issues
+
+**Ticket Number:** 00344516
+**Account Name:** Novant Ballantyne Medical Center
+**Contact Name:** Dana Scarpati
+**Subject:** User cannot generate report previously accessible
+**Status:** Customer Reply Needed
+
+---
+
+Work on upgrade spreadsheet for Akram. Spreadsheet was updated. 
+Send:Instant Notifier and Twilio documentation
+Akram: Upgrade spreadsheet and send 
+Akram: Confirm upgrade timing and certificate renewal window
+
+**Ticket Number:** 00344925
+**Account Name:** Yale University
+**Contact Name:** Akram York
+**Subject:** ALE / MobileView upgrade from 5.7 to 5.8
+**Status:** Customer Reply Needed
+
+Akram and Kevin Cert Questions:
+
+Kevin confirmed certificates can be pushed to multiple tags using MobileView’s Wireless TagConfiguration templates as tags sync.
+You can create a template, set the Wi-Fi, the credentials, the SSID, the application server address, and then you can attach a certificate.”
+
+Kevin: “Now the trick is — and I’m still waiting for an answer from R&D or Product Management —
+if you change the cert on the server first, will you still be able to communicate at the level to push down the cert to the tag.”
+
+---
+
+Waiting on Corey for the status of this Ticket
+
+**Ticket Number:** 00345278
+**Account Name:** Tech Electronics, Inc.
+**Contact Name:** Corey Mueller
+**Subject:** Authentication Client and Web HUGS login slowness
+**Status:** Customer Reply Needed
+
+---
+
+Create upgrade spreadsheet and SOW
+
+**Ticket Number:** 00345755
+**Account Name:** Beaumont Hospital – Farmington Hills
+**Contact Name:** Michael Tarquini
+**Subject:** MV / ALE upgrade request
+**Status:** Customer Reply Needed
+Corewell is in the middle of a very large Hugs conversion at their Royal Oak facility and prior to it going live (March-ish) they want to upgrade their system.
+
+---
+
+Review Engine Logs for errors.
+
+**Ticket Number:** 00346530
+**Account Name:** Lee Health
+**Contact Name:** Peter Sudar
+**Subject:** ALE server errors
+**Status:** Researching
+This all occurred 1/20/2026 around 11 EST ish
+
+---
+Close in 48 hours
+
+**Ticket Number:** 00346538
+**Account Name:** Lancaster General Hospital
+**Contact Name:** Darian McDonald
+**Subject:** “Patient Protection Audit” report disabled
+**Status:** Customer Reply Needed
+
+---
+
+Create upgrade spreadsheet and SOW
+
+**Ticket Number:** 00346643
+**Account Name:** Hospital Corporation of America (HCA Inc.)
+**Contact Name:** Jeremy Clark
+**Subject:** Request to upgrade HUGS WiFi from 5.6.51.4.4 to 5.7 MR1
+**Status:** Researching
+
+---
+
+Waiting on customer to upgrade their vm
+
+**Ticket Number:** 00346679
+**Account Name:** Tech Systems, Inc. – Duluth
+**Contact Name:** James Wright
+**Subject:** HUGS supervision alarms occurring nightly (1–1:30 AM)
+**Status:** Customer Reply Needed
+
+
+---
+I sent email telling customer that I will check
+
+**Ticket Number:** 00346759
+**Account Name:** UZ Gent Universitair Ziekenhuis Gent
+**Contact Name:** Stijn Hendrickx
+**Subject:** ALE availability on Microsoft Hyper-V
+**Status:** Researching
+
+---
+
+Waiting on Damon a, I sent him dm
+
+**Ticket Number:** 00346766
+**Account Name:** Tech Systems, Inc. – Duluth
+**Contact Name:** Mohammad Tokhi
+**Subject:** HUGS tags generate tamper alarms immediately when strap inserted
+**Status:** Researching
+
+---
+
+Waiting on date for zoom session
+
+**Ticket Number:** 00346774
+**Account Name:** Cambridge Memorial Hospital
+**Contact Name:** Jarrod Hipwell
+**Subject:** First-time Authentication Client login issues
+**Status:** Info Provided
+
+---
+
+Waiting on SR 
+
+**Ticket Number:** 00346811
+**Account Name:** Penn Presbyterian Medical Center
+**Contact Name:** Raymond Campbell
+**Subject:** Bean missing from JMX console in Asset Manager
+**Status:** Customer Reply Needed
+
+---
+

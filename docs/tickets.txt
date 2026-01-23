@@ -1,15 +1,44 @@
 
+Get System and ALE Reports
+
+00346907
+
+Client is getting Exciter 5200 health alerts. Ann Reihart is securitas sales side.
+this has been going on for a week and it intermittent.
+sometimes every 30 minutes and sometimes hours between alerts.
+
+on 1/23 he got 12 alerts.
+1/22 there were 4 or 5.
+
+there's 4  - 5200's.  only one device 
+
+Cust does not have access to ALE
 
 
-Start with Upgrades
+Client is getting Exciter 5200 health alerts. Ann Reihart is securitas sales side.
+this has been going on for a week and it intermittent.
+sometimes every 30 minutes and sometimes hours between alerts.
+
+on 1/23 he got 12 alerts.
+1/22 there were 4 or 5.
+
+there's 4  - 5200's.  only one device 
+
+Cust does not have access to ALE
 
 ------------------------------------------------------------
 
-Upgrade
 
-**Account Name:** Hospital Corporation of America (HCA Inc.)
-Create upgrade spreadsheet and SOW
+
+
+
+------------------------------------------------------------
+Upgrades
+------------------------------------------------------------
+**Account Name: ** HCA Inc Upgrade
 1/23/26 - I sent Jeremy a comment telling him I'm working on it
+
+Create upgrade spreadsheet and SOW
 
 **Ticket Number:** 00346643
 **Contact Name:** Jeremy Clark
@@ -18,9 +47,7 @@ Create upgrade spreadsheet and SOW
 
 ------------------------------------------------------------
 
-Upgrade
-
-**Account Name:** Johnson Controls, Inc.
+**Account Name:** Johnson ControlsUpgrade
 
 Update spreadsheet with MR1 download link
 send INF Plus documentation
@@ -33,9 +60,7 @@ send MR1 documentation
 
 ------------------------------------------------------------
 
-Upgrade
-
-**Account Name:** Beaumont Hospital – Farmington Hills
+**Account Name:** Beaumont Hospital Upgrade
 
 Create upgrade spreadsheet and SOW
 
@@ -48,9 +73,7 @@ and prior to it going live (March-ish) they want to upgrade their system.
 
 ------------------------------------------------------------
 
-Upgrade
-
-**Account Name:** Yale University
+**Account Name:** Yale University Upgrade
 
 Work on upgrade spreadsheet for Akram. Spreadsheet was updated. 
 Send:Instant Notifier and Twilio documentation
@@ -74,61 +97,13 @@ if you change the cert on the server first, will you still be able to communicat
 
 ------------------------------------------------------------
 
-Lonnie to Monitor. Probably can close.
 
-Securitas said, Hi Jen,
-The new logger was shipped last week. Let me hunt for the tracking number 
-and forward it to you once I get it.
-Sorry for the delay!
 
-**Ticket Number:** 00341591
-**Account Name:** Unity Point Health
-**Contact Name:** Jen Tjepkes
-**Subject:** Customer’s TAG is out of warranty – purchase replacement
-**Status:** Researching
+
+
 
 ------------------------------------------------------------
-
-**Account Name:** Trinity Health Pensacola
-
-HUGS tags from another facility are displaying in Livonia MV
-
-**Ticket Number:** 00344011
-**Contact Name:** Charles Wallace
-**Subject:** Escalated tag issue (Livonia / Grand Rapids)
-**Status:** Customer Reply Needed 2
-
-------------------------------------------------------------
-
-1/23/26 - Issue is resolved after customer updated RAM
-
-**Ticket Number:** 00346679
-**Account Name:** Tech Systems, Inc. – Duluth
-**Contact Name:** James Wright
-**Subject:** HUGS supervision alarms occurring nightly (1–1:30 AM)
-**Status:** Customer Reply Needed
-
-------------------------------------------------------------
-
-Waiting on cust to consult with IT re: permission issues
-
-**Ticket Number:** 00344516
-**Account Name:** Novant Ballantyne Medical Center
-**Contact Name:** Dana Scarpati
-**Subject:** User cannot generate report previously accessible
-**Status:** Customer Reply Needed
-
-------------------------------------------------------------
-
-
-Waiting on Corey for the status of this Ticket
-
-**Ticket Number:** 00345278
-**Account Name:** Tech Electronics, Inc.
-**Contact Name:** Corey Mueller
-**Subject:** Authentication Client and Web HUGS login slowness
-**Status:** Customer Reply Needed
-
+Researching 
 ------------------------------------------------------------
 
 **Account Name:** Lee Health
@@ -139,17 +114,8 @@ Review Engine Logs for errors.
 **Contact Name:** Peter Sudar
 **Subject:** ALE server errors
 **Status:** Researching
+
 This all occurred 1/20/2026 around 11 EST ish
-
-------------------------------------------------------------
-
-Close in 48 hours
-
-**Ticket Number:** 00346538
-**Account Name:** Lancaster General Hospital
-**Contact Name:** Darian McDonald
-**Subject:** “Patient Protection Audit” report disabled
-**Status:** Customer Reply Needed
 
 ------------------------------------------------------------
 
@@ -180,7 +146,62 @@ Waiting on Damon, I sent him dm
 
 ------------------------------------------------------------
 
-Waiting on date for zoom session
+**Ticket Number:** 00341591
+**Account Name:** Unity Point Health
+
+Securitas said, Hi Jen,
+The new logger was shipped last week. Let me hunt for the tracking number 
+and forward it to you once I get it.
+Sorry for the delay!
+
+**Contact Name:** Jen Tjepkes
+**Subject:** Customer’s TAG is out of warranty – purchase replacement
+**Status:** Researching
+
+
+
+
+
+------------------------------------------------------------
+Waiting on Customer 
+------------------------------------------------------------
+
+
+Waiting on cust to consult with IT re: permission issues
+
+**Ticket Number:** 00344516
+**Account Name:** Novant Ballantyne Medical Center
+**Contact Name:** Dana Scarpati
+**Subject:** User cannot generate report previously accessible
+**Status:** Customer Reply Needed
+
+------------------------------------------------------------
+
+Waiting on Corey for the status of this Ticket
+
+**Ticket Number:** 00345278
+**Account Name:** Tech Electronics, Inc.
+**Contact Name:** Corey Mueller
+**Subject:** Authentication Client and Web HUGS login slowness
+**Status:** Customer Reply Needed
+
+------------------------------------------------------------
+
+Waiting on Customer to see if issue is resolved
+
+**Account Name:** Trinity Health Pensacola
+
+Update - 1/12 Exciter with HW ID of 1, it was changed to 999
+So far so good
+
+**Contact Name:** Charles Wallace
+**Subject:** Escalated tag issue (Livonia / Grand Rapids)
+**Status:** Customer Reply Needed 2
+
+------------------------------------------------------------
+
+
+Waiting on customer to give me date for zoom session
 
 **Ticket Number:** 00346774
 **Account Name:** Cambridge Memorial Hospital
@@ -211,5 +232,41 @@ jeff Shutt
 
 We're re-imaging a HUGS MobileView monitoring station and 
 need assistance with installs and configuration.
+
+
+Monday at 9:30
+
+
+
+
+
+
+------------------------------------------------------------
+Resolved 
+------------------------------------------------------------
+1/23/26 - Issue is resolved after customer updated RAM
+James will I will continue checking daily to confirm.
+
+**Ticket Number:** 00346679
+**Account Name:** Tech Systems, Inc. – Duluth
+**Contact Name:** James Wright
+**Subject:** HUGS supervision alarms occurring nightly (1–1:30 AM)
+**Status:** Customer Reply Needed
+
+------------------------------------------------------------
+
+
+
+
+------------------------------------------------------------
+Close 
+------------------------------------------------------------
+Close in 48 hours on Monday 26
+
+**Ticket Number:** 00346538
+**Account Name:** Lancaster General Hospital
+**Contact Name:** Darian McDonald
+**Subject:** “Patient Protection Audit” report disabled
+**Status:** Customer Reply Needed
 
 ------------------------------------------------------------

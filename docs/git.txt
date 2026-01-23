@@ -1,0 +1,67 @@
+LOCAL → REMOTE (Commit + Push)
+
+One file
+
+cd C:\Projects\lonnie-kb
+git checkout main
+git fetch origin
+git pull origin main
+git status
+git add docs\git.txt
+git commit -m "Added git.txt to the repo"
+git push origin main
+
+------------------------------------------------
+
+LOCAL → REMOTE (Commit + Push)
+
+Whole branch (all files)
+
+cd C:\Projects\lonnie-kb
+git checkout main
+git fetch origin
+git pull origin main
+git status
+git add .
+git commit -m "Update branch"
+git push origin main
+
+------------------------------------------------
+
+REMOTE → LOCAL (Pull)
+
+Use this when GitHub has the newest changes and you want them locally.
+
+cd C:\Projects\lonnie-kb
+git checkout main
+git fetch origin
+git pull origin main
+git status
+
+
+------------------------------------------------
+
+Git — Who Has the Latest? (Local vs Remote) — Step by Step
+
+3) Ask GitHub for the latest info (no file changes yet)
+git fetch origin
+
+4) Check who is latest (read the results)
+git status
+
+
+5) Decide who has latest
+
+A) If you see modified: (example modified: docs/tickets.txt)
+→ LOCAL has the latest for that file (you changed it locally)
+
+B) If you see Your branch is behind 'origin/main'
+→ REMOTE has the latest (GitHub has commits you don’t have)
+
+C) If you see Your branch is ahead of 'origin/main'
+→ LOCAL has the latest (you have commits not pushed)
+
+D) If you see up to date with 'origin/main' AND working tree clean
+→ They are the same (no one is newer)
+
+That’s the full “who has latest” check.

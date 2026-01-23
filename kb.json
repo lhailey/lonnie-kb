@@ -144,17 +144,12 @@
 
  {
   "question": "Cisco Upgrade",
-  "answer": "<b>Cisco MobileView / AeroScout Upgrade Procedure (PDF)</b><br><br><a href=\"/docs/cisco_upgrade_crystal_run.pdf\" target=\"_blank\">📄 Open Cisco Upgrade Runbook (PDF)</a>"
+  "answer": "<b>Cisco MobileView / AeroScout Upgrade Procedure (PDF)</b><br><br><a href=\"/docs/cisco_upgrade_crystal_run.pdf\" target=\"_blank\">📄 Open Cisco Upgrade (PDF)</a>"
  },
 
  {
-  "question": "MobileView / AeroScout Upgrade Runbook",
-  "answer": "<a href=\"/docs/upgrade_mv_ale.pdf\" target=\"_blank\">📄 Open upgrade runbook (PDF)</a>"
- },
-
- {
-  "question": "Cisco Upgrade Part Two",
-  "answer": "<a href=\"/docs/cisco_upgrade_crystal_run.pdf\" target=\"_blank\"><br>Open Cisco Upgrade</a>"
+  "question": "MobileView / AeroScout Upgrade",
+  "answer": "<a href=\"/docs/upgrade_mv_ale.pdf\" target=\"_blank\">📄 Open upgrade (PDF)</a>"
  },
 
  {
@@ -163,5 +158,6 @@
  }
 	
 ]
+
 
 

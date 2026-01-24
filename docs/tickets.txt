@@ -1,39 +1,9 @@
 
-Get System and ALE Reports
-
-00346907
-
-Client is getting Exciter 5200 health alerts. Ann Reihart is securitas sales side.
-this has been going on for a week and it intermittent.
-sometimes every 30 minutes and sometimes hours between alerts.
-
-on 1/23 he got 12 alerts.
-1/22 there were 4 or 5.
-
-there's 4  - 5200's.  only one device 
-
-Cust does not have access to ALE
-
-
-Client is getting Exciter 5200 health alerts. Ann Reihart is securitas sales side.
-this has been going on for a week and it intermittent.
-sometimes every 30 minutes and sometimes hours between alerts.
-
-on 1/23 he got 12 alerts.
-1/22 there were 4 or 5.
-
-there's 4  - 5200's.  only one device 
-
-Cust does not have access to ALE
-
-------------------------------------------------------------
-
-
 
 
 
 ------------------------------------------------------------
-Upgrades
+Upgrades - 
 ------------------------------------------------------------
 **Account Name: ** HCA Inc Upgrade
 1/23/26 - I sent Jeremy a comment telling him I'm working on it
@@ -106,6 +76,18 @@ if you change the cert on the server first, will you still be able to communicat
 Researching 
 ------------------------------------------------------------
 
+Select Item 19	
+00346926
+Account Name: Froedtert Healthcare
+Contact: Jim Lambert
+Subject: We are receiving many LF Interference alerts on one unit
+We went live with Hugs last month and we seem to be receiving a lot of LF Interference alerts 
+on the 7th floor at our main campus. We have had 16 in the last week. 
+60 in the past month.
+
+
+------------------------------------------------------------
+
 **Account Name:** Lee Health
 
 Review Engine Logs for errors.
@@ -163,9 +145,23 @@ Sorry for the delay!
 
 
 ------------------------------------------------------------
-Waiting on Customer 
+Waiting on Customer - WOC
 ------------------------------------------------------------
 
+Waiting on SR from Ian. He does not have MV Login
+
+00346907 - Ian Walker - Tech Systems, Inc. - Duluth
+
+Client is getting Exciter 5200 health alerts. Ann Reihart is securitas sales side.
+this has been going on for a week and it intermittent.
+sometimes every 30 minutes and sometimes hours between alerts.
+
+on 1/23 he got 12 alerts.
+1/22 there were 4 or 5.
+
+there's 4  - 5200's.  only one is not working
+
+------------------------------------------------------------
 
 Waiting on cust to consult with IT re: permission issues
 

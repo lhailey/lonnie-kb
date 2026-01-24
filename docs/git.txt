@@ -31,8 +31,8 @@ git checkout main
 git fetch origin
 git pull origin main
 git status
-git add docs\git.txt
-git commit -m "Added URLS to Git.txt"
+git add index.html
+git commit -m "Remove arrows from list"
 git push origin main
 echo check if local/remote are the same
 git fetch origin
@@ -70,8 +70,9 @@ git fetch origin
 git pull origin main
 git status
 git add .
-git commit -m "Update branch"
+git commit -m "Update branch because my script broke. hopefully this fixes."
 git push origin main
+
 
 ------------------------------------------------
 

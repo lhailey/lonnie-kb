@@ -1,4 +1,27 @@
 
+Local Host
+
+Run Server: 
+‪C:\Projects\local_server.bat
+
+Navigate to KB
+http://localhost:8000/
+
+--------------------------------------
+
+Remote Servers
+
+KB Search
+https://lonnie-kb.onrender.com/
+
+GitHub
+https://github.com/lhailey/lonnie-kb
+
+Render
+https://dashboard.render.com/
+
+--------------------------------------
+
 LOCAL → REMOTE (Commit + Push)
 
 One file

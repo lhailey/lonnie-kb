@@ -1,4 +1,10 @@
 [
+
+  {
+    "question": "github",
+    "answer": "<b>GitHub Procedure</b><br><a href=\"/docs/git.txt\" target=\"_blank\">📄 GitHub Procedure</a>"
+  },
+  
   {
     "question": "What is product license key for deployment manager (dm)?",
     "answer": "<br>PRLM77"

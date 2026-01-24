@@ -13,6 +13,21 @@ git push origin main
 
 ------------------------------------------------
 
+Two files
+
+cd C:\Projects\lonnie-kb
+git checkout main
+git fetch origin
+git pull origin main
+git status
+
+git add docs\git.txt
+git add kb.json
+
+git commit -m "Update git documentation and kb.json to include git record"
+git push origin main
+
+
 LOCAL → REMOTE (Commit + Push)
 
 Whole branch (all files)

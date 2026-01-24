@@ -32,7 +32,7 @@ git fetch origin
 git pull origin main
 git status
 git add docs\git.txt
-git commit -m "Updated git.txt / check if local/remote are the same"
+git commit -m "Added URLS to Git.txt"
 git push origin main
 echo check if local/remote are the same
 git fetch origin

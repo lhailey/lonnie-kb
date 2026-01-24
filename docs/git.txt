@@ -13,8 +13,6 @@ git push origin main
 
 ------------------------------------------------
 
-Two files
-
 cd C:\Projects\lonnie-kb
 git checkout main
 git fetch origin
@@ -24,9 +22,14 @@ git status
 git add docs\git.txt
 git add kb.json
 
-git commit -m "Update git documentation and kb.json to include git record"
+git commit -m "Testing Look for Lonnie Hailey Update"
 git push origin main
+date /t
+echo all done
+cls
 
+
+------------------------------------------------
 
 LOCAL → REMOTE (Commit + Push)
 

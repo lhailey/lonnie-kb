@@ -37,7 +37,7 @@ git push origin main
 echo check if local/remote are the same
 git fetch origin
 git status
-.
+echo Done
 
 ------------------------------------------------
 
@@ -55,7 +55,7 @@ git push origin main
 echo check if local/remote are the same
 git fetch origin
 git status
-.
+echo Done
 
 
 ------------------------------------------------

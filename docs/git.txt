@@ -11,9 +11,10 @@ git status
 git add docs\git.txt
 git commit -m "Updated git.txt / check if local/remote are the same"
 git push origin main
-date /t
-echo all done
-cls
+echo check if local/remote are the same
+git fetch origin
+git status
+.
 
 ------------------------------------------------
 
@@ -28,9 +29,10 @@ git add kb.json
 
 git commit -m "Testing Look for Lonnie Hailey Update"
 git push origin main
-date /t
-echo all done
-cls
+echo check if local/remote are the same
+git fetch origin
+git status
+.
 
 
 ------------------------------------------------

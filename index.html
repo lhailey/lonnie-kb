@@ -164,35 +164,48 @@ async function search() {
   if (!data || data.length === 0) {
     output = "<p>No match found</p>";
   } else {
-	  
-	data.forEach((item, i) => {
-	  const term = q;
-	
-	  output += `
-	    <details style="margin-bottom:16px;">
-	      <summary style="cursor:pointer; font-weight:bold;">
-	        ${i + 1}. ${highlight(item.question, term)}
-	      </summary>
-	
-	      <div style="margin-top:10px; padding-left:10px;">
-			${item.answer}
 
-	  `;
-	
-	  if (item.images && item.images.length > 0) {
-	    item.images.forEach(img => {
-	      output += `
-	        <img src="/images/${img}"
-	             style="max-width:800px; display:block; margin:10px 0;">
-	      `;
-	    });
+	data.forEach((item, i) => {
+
+	  // normalize search text
+	  const searchText = q.trim().toLowerCase();
+
+	  // 🔹 LIST MODE (no arrows, no answers)
+	  if (searchText === "list") {
+		output += `
+		  <div style="margin-bottom:10px; font-weight:600;">
+			${i + 1}. ${item.question}
+		  </div>
+		`;
+		return;
 	  }
-	
+
+	  // 🔹 NORMAL MODE (arrows + details)
 	  output += `
-	      </div>
-	    </details>
+		<details style="margin-bottom:16px;">
+		  <summary style="cursor:pointer; font-weight:bold;">
+			${i + 1}. ${highlight(item.question, q)}
+		  </summary>
+
+		  <div style="margin-top:10px; padding-left:10px;">
+			${item.answer}
+	  `;
+
+	  if (item.images && item.images.length > 0) {
+		item.images.forEach(img => {
+		  output += `
+			<img src="/images/${img}"
+				 style="max-width:800px; display:block; margin:10px 0;">
+		  `;
+		});
+	  }
+
+	  output += `
+		  </div>
+		</details>
 	  `;
 	});
+
   }
 
   document.getElementById("out").innerHTML = output;

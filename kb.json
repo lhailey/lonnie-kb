@@ -16,7 +16,7 @@
   },
 	
   {
-    "question": "Cockpit URL?",
+    "question": "Cockpit URL",
     "answer": "<br>https://<hostname>:10.10.1.1/cockpit"
   },
 	

@@ -1,4 +1,17 @@
 
+--------------------------------------
+
+Zoom 
+Field service ID
+751 968 4006 
+550242
+
+Meeting
+8207703683
+201923
+
+--------------------------------------
+
 Local Host
 
 Run Server: 
@@ -22,7 +35,7 @@ https://dashboard.render.com/
 
 --------------------------------------
 
-LOCAL → REMOTE (Commit + Push)
+LOCAL → REMOTE (Commit index.html + Push)
 
 One file
 
@@ -32,12 +45,33 @@ git fetch origin
 git pull origin main
 git status
 git add index.html
-git commit -m "Remove arrows from list"
+git commit -m "updated html to do list without dropdown"
 git push origin main
 echo check if local/remote are the same
 git fetch origin
 git status
 echo Done
+
+--------------------------------------
+
+LOCAL → REMOTE (Commit git.txt + Push)
+
+One file
+
+cd C:\Projects\lonnie-kb
+git checkout main
+git fetch origin
+git pull origin main
+git status
+git add docs/git.txt
+git commit -m "updated git.txt with zoom id password"
+git push origin main
+echo check if local/remote are the same
+git fetch origin
+git status
+echo Done
+
+
 
 ------------------------------------------------
 
@@ -47,10 +81,10 @@ git fetch origin
 git pull origin main
 git status
 
-git add docs\git.txt
+git add index.html
 git add kb.json
 
-git commit -m "Testing Look for Lonnie Hailey Update"
+git commit -m "updated html to do list without dropdown"
 git push origin main
 echo check if local/remote are the same
 git fetch origin

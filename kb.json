@@ -2,11 +2,11 @@
 
   {
     "question": "github",
-    "answer": "<b>GitHub Procedure</b><br><a href=\"/docs/git.txt\" target=\"_blank\">📄 GitHub Procedure</a>"
+    "answer": "<br><a href=\"/docs/git.txt\" target=\"_blank\">📄 GitHub Procedure</a>"
   },
   
   {
-    "question": "What is product license key for deployment manager (dm)?",
+    "question": "Deployment Manager (dm) Product License Key",
     "answer": "<br>PRLM77"
   },
 	
@@ -16,8 +16,8 @@
   },
 	
   {
-    "question": "What is the Cockpit URL?",
-    "answer": "<br>https://<hostname>:8443/cockpit"
+    "question": "Cockpit URL?",
+    "answer": "<br>https://<hostname>:10.10.1.1/cockpit"
   },
 	
   {
@@ -31,23 +31,23 @@
   },
 	
   {
-    "question": "Ubuntu view and edit network connections <br> Terminal Use",
+    "question": "Ubuntu terminal",
     "answer": "<br>Sudo nmtui"
   },
 	
   {
-    "question": "Show the MV ALE shortcut commands",
+    "question": "MV ALE shortcut commands",
     "answer": "<br>Refer to the shortcut command reference below.",
 	"images": ["shortcuts_mv_ale.png"]	
   },
 	
   {
-    "question": "How to RMA",
+    "question": "RMA Procedure",
     "answer": "<br>On the ticket, click \"Change to RMA\".<br><br>Pick Product Solutions Returned – RTLS or Patient Security (based on product).<br><br>Set RMA Type to Unk unless you know the correct value.<br><br>Assign the ticket to the RTLS Sales Operation queue for RTLS.<br><br>For Patient Security, assign to the appropriate Sales Ops group (WG, Arial, etc.)."
   },
 	
   {
-    "question": "License Key for HM <br> Hardware Manager License",
+    "question": "Hardware Manager (HR) License Key",
     "answer": "<br>Tag Manager License Key: SHKT4393",
 	"images": ["hw_manager_license_key.png"]	
   },
@@ -58,7 +58,7 @@
   },
 	
   {
-    "question": "Find Asset Location via reporting tool",
+    "question": "Find Asset Location via Reporting tool",
     "answer": "<br>OBS nice video on finding device location via saved reports"
   },
 	
@@ -150,7 +150,7 @@
 
  {
   "question": "Cisco Upgrade",
-  "answer": "<b>Cisco MobileView / AeroScout Upgrade Procedure (PDF)</b><br><br><a href=\"/docs/cisco_upgrade_crystal_run.pdf\" target=\"_blank\">📄 Open Cisco Upgrade (PDF)</a>"
+  "answer": "<br><br><a href=\"/docs/cisco_upgrade_crystal_run.pdf\" target=\"_blank\">📄 Open Cisco Upgrade (PDF)</a>"
  },
 
  {
@@ -164,6 +164,5 @@
  }
 	
 ]
-
 
 

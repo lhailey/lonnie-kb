@@ -1,51 +1,81 @@
 
-
-
-
-------------------------------------------------------------
-Upgrades - 
-------------------------------------------------------------
-**Account Name: ** HCA Inc Upgrade
-1/23/26 - I sent Jeremy a comment telling him I'm working on it
-
-Create upgrade spreadsheet and SOW
-
-**Ticket Number:** 00346643
-**Contact Name:** Jeremy Clark
-**Subject:** Request to upgrade HUGS WiFi from 5.6.51.4.4 to 5.7 MR1
-**Status:** Researching
-
 ------------------------------------------------------------
 
-**Account Name:** Johnson ControlsUpgrade
+Row 1
 
-Update spreadsheet with MR1 download link
+Todo: Update spreadsheet with MR1 download link
+
+1. **Provide correct upgrade software and documentation**
+
+   * Obtain and validate **MobileView / Engine 5.8 MR1** installers (not GA 5.8).
+   * Update the upgrade worksheet to reflect **5.8 MR1**, including verified customer download links.
+   * Share all relevant upgrade documentation with Kyle.
+
+
 send INF Plus documentation
 send MR1 documentation
- 
-**Ticket Number:** 00325722
-**Contact Name:** Kyle Francoeur
-**Subject:** Upgrade system from 5.4 to 5.7
-**Status:** Session is Scheduled
+
+Ticket Number: 00325722
+Account Name: Johnson Controls, Inc.
+Contact Name: Kyle Francoeur
+Subject: Upgrade system from 5.4 to 5.7
+Status: Session is Scheduled
 
 ------------------------------------------------------------
 
-**Account Name:** Beaumont Hospital Upgrade
+Row 2
+Ticket Number: 00341591
+Account Name: Unity Point Health
+Contact Name: Jen Tjepkes
+Subject: Customer's TAG is out of warranty. They would like to purchase a new one.
 
-Create upgrade spreadsheet and SOW
-
-**Ticket Number:** 00345755
-**Contact Name:** Michael Tarquini
-**Subject:** MV / ALE upgrade request
-**Status:** Customer Reply Needed
-Corewell is in the middle of a very large Hugs conversion at their  oyal Oak facility 
-and prior to it going live (March-ish) they want to upgrade their system.
+Status: 
+Securitas said, Hi Jen,
+The new logger was shipped last week. Let me hunt for the tracking number 
+and forward it to you once I get it.
+Sorry for the delay!
 
 ------------------------------------------------------------
 
-**Account Name:** Yale University Upgrade
+Row 3
 
-Work on upgrade spreadsheet for Akram. Spreadsheet was updated. 
+Update - 1/12 Exciter with HW ID of 1, it was changed to 999
+So far so good
+
+Ticket Number: 00344011
+Account Name: Trinity Health Pensacola
+Contact Name: Charles Wallace
+Subject: Escalated tag issue (Livonia / Grand Rapids)
+Status: Resolved - Pending Confirmation
+
+Waiting On:
+Waiting on Customer to see if issue is resolved
+
+------------------------------------------------------------
+
+Row 4
+
+Waiting on cust to consult with IT re: permission issues
+
+Ticket Number: 00344516
+Account Name: Novant Ballantyne Medical Center
+Contact Name: Dana Scarpati
+Subject: User can not generate Report they previously had access to generate report
+Status: Customer Reply Needed
+
+------------------------------------------------------------
+
+Row 5
+
+Upgrade end of feb, beginning of march
+
+Ticket Number: 00344925
+Account Name: Yale University
+Contact Name: Akram York
+Subject: Yale University ALE/MV upgrade from 5.7 to 5.8
+Status: Customer Reply Needed
+
+Todo: Work on upgrade spreadsheet for Akram. Spreadsheet was updated. 
 Send:Instant Notifier and Twilio documentation
 
 Notes:
@@ -57,7 +87,9 @@ Akram: Confirm upgrade timing and certificate renewal window
 **Subject:** ALE / MobileView upgrade from 5.7 to 5.8
 **Status:** Customer Reply Needed
 
-Akram and Kevin Cert Questions:
+Todo: 
+
+akram and Kevin Cert Questions:
 
 Kevin confirmed certificates can be pushed to multiple tags using MobileView’s Wireless TagConfiguration templates as tags sync.
 You can create a template, set the Wi-Fi, the credentials, the SSID, the application server address, and then you can attach a certificate.”
@@ -67,90 +99,173 @@ if you change the cert on the server first, will you still be able to communicat
 
 ------------------------------------------------------------
 
+Row 6
 
+Waiting on Customer Corey for the status of this Ticket
 
-
-
-
-------------------------------------------------------------
-Researching 
-------------------------------------------------------------
-
-Select Item 19	
-00346926
-Account Name: Froedtert Healthcare
-Contact: Jim Lambert
-Subject: We are receiving many LF Interference alerts on one unit
-We went live with Hugs last month and we seem to be receiving a lot of LF Interference alerts 
-on the 7th floor at our main campus. We have had 16 in the last week. 
-60 in the past month.
-
+Ticket Number: 00345278
+Account Name: Tech Electronics, Inc.
+Contact Name: Corey Mueller
+Subject: Authentication Client and Web HUGS Login Slowness and Issues (Previous Ticket 00341998)
+Status: Customer Reply Needed
 
 ------------------------------------------------------------
 
-**Account Name:** Lee Health
+Row 7
 
-Review Engine Logs for errors.
+Waiting on cust to send SR
 
-**Ticket Number:** 00346530
-**Contact Name:** Peter Sudar
-**Subject:** ALE server errors
-**Status:** Researching
+Todo: Create upgrade spreadsheet and SOW
+
+Ticket Number: 00345755
+Account Name: Beaumont Hospital - Farmington Hills
+Contact Name: Michael Tarquini
+Subject: Corewell/Beaumont wants to upgrade their MV/ALE
+Status: Customer Reply Needed
+
+------------------------------------------------------------
+
+Status: I reviewed logs and made some notes. Send to Damon 
+or schedure an internal meeting
+
+Row 8
+
+Ticket Number: 00346530
+Account Name: Lee Health
+Contact Name: Peter Sudar
+Subject: ALE Server Errors
+Status: Researching
+
 
 This all occurred 1/20/2026 around 11 EST ish
 
+Todo: Review Engine Logs for errors.
+
 ------------------------------------------------------------
 
+Row 9
+Ticket Number: 00346643
+Account Name: Hospital Corporation of America
+Contact Name: Jeremy Clark
+Subject: Request to upgrade the TBMC instance of HUGS WiFi from 5.6.51.4.4 to 5.7 MR1 (5.7.20)
+Status: Customer Reply Needed
 
-I sent email telling customer that I will check
+Jeremy,
+That date can work for us. I will create the update spreadsheet and sow and review with my team.
+Then I will review with your team.
 
-**Ticket Number:** 00346759
-**Account Name:** UZ Gent Universitair Ziekenhuis Gent
-**Contact Name:** Stijn Hendrickx
-**Subject:** ALE availability on Microsoft Hyper-V
-Questions on testing. 5.8 MRI instructions more generic
-(so provide instructions)
+I will keep you updated.
 
+-Lonnie
+
+Status: ToDo
+Status: 
+Lonnie - Confirm the date/time with Jeremy
+
+Status: 
+1/26/2026, 2:19 PM
+Lonnie, we are currently looking at scheduling the upgrade for Tuesday, February 24th at 10am central time. 
+Please let me know if that fits your team's availability.
+
+**Account Name: ** HCA Inc Upgrade
+1/23/26 - I sent Jeremy a comment telling him I'm working on it
+
+Todo: 
+Create upgrade spreadsheet and SOW
+
+**Ticket Number:** 00346643
+**Contact Name:** Jeremy Clark
+**Subject:** Request to upgrade HUGS WiFi from 5.6.51.4.4 to 5.7 MR1
 **Status:** Researching
 
 ------------------------------------------------------------
 
-1/23 - I sent Mohammad email asking him to do random checks
-I also sent email to securitas team telling them what I did
+Row 10
 
-Waiting on Damon, I sent him dm
+1/23/26 - Issue is resolved after customer updated RAM
+James will I will continue checking daily to confirm.
 
-**Ticket Number:** 00346766
-**Account Name:** Tech Systems, Inc. – Duluth
-**Contact Name:** Mohammad Tokhi
-**Subject:** HUGS tags generate tamper alarms immediately when strap inserted
-**Status:** Researching
+customer will moniotr. Close after a week.
+
+
+Ticket Number: 00346679
+Account Name: Tech Systems, Inc. - Duluth
+Contact Name: James Wright
+Subject: HUGS supervision alarms going off between 1–1:30am every night
+Status: Customer Reply Needed
+
+------------------------------------------------------------
+
+
+Row 11
+
+1. **Logs + system reports uploaded to ticket**
+2. **Internal Securitas review (Lonnie + senior support / R&D)**
+3. **LDAP-side investigation**
+
+
+Ticket Number: 00346774
+Account Name: Cambridge Memorial Hospital
+Contact Name: Jarrod Hipwell
+Subject: First time log in issues to Authentication Client
+Status: Customer Reply Needed
+
+Status History:
+Status: Done. I uploaded LDAP settings that should be confirmed text file
+Status: Don't forget 	
+Status: check notes for the next step. verify log files,
+Status: Session Scheduled
+
+Status: Done. I uploaded LDAP settings that should be confirmed text file
+
+Status: Don't forget 	
+
+1/26/2026, 2:27 PM
+Hi Lonnie,
+Files requested have been attached, please send along the LDAP settings you'd like for me to confirm and I can have that done as well.
+
+
 
 ------------------------------------------------------------
 
-**Ticket Number:** 00341591
-**Account Name:** Unity Point Health
+Row 12
+Ticket Number: 00346811
+Account Name: Penn Presbyterian Medical Center
+Contact Name: Raymond Campbell
+Subject: Bean is missing from JMX-console in asset manager
+Status: Researching
 
-Securitas said, Hi Jen,
-The new logger was shipped last week. Let me hunt for the tracking number 
-and forward it to you once I get it.
-Sorry for the delay!
+Status History:
+Status: Mike Responded and is looking at Logs
 
-**Contact Name:** Jen Tjepkes
-**Subject:** Customer’s TAG is out of warranty – purchase replacement
-**Status:** Researching
-
-
-
-
+Todo:
+Todo: Send Mike Smith note for SR Upload
 
 ------------------------------------------------------------
-Waiting on Customer - WOC
+
+Row 13
+
+Not done. Do chatgpt action items for lonnie
+
+Ticket Number: 00346888
+Account Name: Susquehanna Health System
+Contact Name: Dan Kudrick
+Subject: Migration to a new LDAP S configuration getting message, "certificate is not trusted"
+Status: Customer Reply Needed
+
 ------------------------------------------------------------
+
+
+Row 14
 
 Waiting on SR from Ian. He does not have MV Login
 
-00346907 - Ian Walker - Tech Systems, Inc. - Duluth
+
+Ticket Number: 00346907
+Account Name: Tech Systems, Inc. - Duluth
+Contact Name: Ian Walker
+Subject: Exciter 5200 is getting health alerts
+Status: Customer Reply Needed
 
 Client is getting Exciter 5200 health alerts. Ann Reihart is securitas sales side.
 this has been going on for a week and it intermittent.
@@ -161,108 +276,39 @@ on 1/23 he got 12 alerts.
 
 there's 4  - 5200's.  only one is not working
 
-------------------------------------------------------------
-
-Waiting on cust to consult with IT re: permission issues
-
-**Ticket Number:** 00344516
-**Account Name:** Novant Ballantyne Medical Center
-**Contact Name:** Dana Scarpati
-**Subject:** User cannot generate report previously accessible
-**Status:** Customer Reply Needed
 
 ------------------------------------------------------------
 
-Waiting on Corey for the status of this Ticket
+Row 15
+Ticket Number: 00346926
+Account Name: Froedtert Healthcare
+Contact Name: Jim Lambert
+Subject: We are receiving many LF Interference alerts on one unit
+Status: Customer Reply Needed
 
-**Ticket Number:** 00345278
-**Account Name:** Tech Electronics, Inc.
-**Contact Name:** Corey Mueller
-**Subject:** Authentication Client and Web HUGS login slowness
-**Status:** Customer Reply Needed
+Status History:
+Status: Next step, schedule internal meeting to review logs, then get back with James
+Status: 1/26 1:18PM - James checked with servier guy and the gateway service is running
+Status: I spoke to James on the phone on 1/26 at 1:00 PM
 
-------------------------------------------------------------
+Update: 
 
-Waiting on Customer to see if issue is resolved
+I sent Jim this proposed resolution on 1/26 at 12pm:
+I checked your system report logs (error.log) and found that 
+the gateway service is having issues. Here is the log entry:
 
-**Account Name:** Trinity Health Pensacola
+2026-01-13 12:02:10,453 ERROR <<gateway>>
+[com.aeroscout.mobileview.gateway.gateway-web.vendor.aeroscout.engine.worker.ExciterTraceTableNotificationWorker] 
+Could not stop the processing worker
 
-Update - 1/12 Exciter with HW ID of 1, it was changed to 999
-So far so good
+Restarting the  MobileView Gateway services may clear the stuck processing worker and resolve the problem.
+Please update me with your results.
 
-**Contact Name:** Charles Wallace
-**Subject:** Escalated tag issue (Livonia / Grand Rapids)
-**Status:** Customer Reply Needed 2
+Update
 
-------------------------------------------------------------
-
-
-Waiting on customer to give me date for zoom session
-
-**Ticket Number:** 00346774
-**Account Name:** Cambridge Memorial Hospital
-**Contact Name:** Jarrod Hipwell
-**Subject:** First-time Authentication Client login issues
-**Status:** Info Provided
-
-------------------------------------------------------------
-
-Waiting on SR 
-They added ticket on 1/22 - Review logs
-
-**Ticket Number:** 00346811
-**Account Name:** Penn Presbyterian Medical Center
-**Contact Name:** Raymond Campbell
-**Subject:** Bean missing from JMX console in Asset Manager
-**Status:** Customer Reply Needed
-
-Asset Manager is not initialized. Look at logs to see if its there
-
-------------------------------------------------------------
-
-1/23 - Ask for SR
-00346912 - Assistance Needed for New Workstation Setup
-
-Owensboro Health, Inc.
-jeff Shutt
-
-We're re-imaging a HUGS MobileView monitoring station and 
-need assistance with installs and configuration.
-
-
-Monday at 9:30
-
-
-
-
+1/26 at 11:04 - I asked Jim to resend events for 2 months in csv format
+System Report, Hugs Event was sent
 
 
 ------------------------------------------------------------
-Resolved 
-------------------------------------------------------------
-1/23/26 - Issue is resolved after customer updated RAM
-James will I will continue checking daily to confirm.
 
-**Ticket Number:** 00346679
-**Account Name:** Tech Systems, Inc. – Duluth
-**Contact Name:** James Wright
-**Subject:** HUGS supervision alarms occurring nightly (1–1:30 AM)
-**Status:** Customer Reply Needed
-
-------------------------------------------------------------
-
-
-
-
-------------------------------------------------------------
-Close 
-------------------------------------------------------------
-Close in 48 hours on Monday 26
-
-**Ticket Number:** 00346538
-**Account Name:** Lancaster General Hospital
-**Contact Name:** Darian McDonald
-**Subject:** “Patient Protection Audit” report disabled
-**Status:** Customer Reply Needed
-
-------------------------------------------------------------

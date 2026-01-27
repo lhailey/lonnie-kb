@@ -4,6 +4,11 @@
     "question": "github",
     "answer": "<br><a href=\"/docs/git.txt\" target=\"_blank\">📄 GitHub Procedure</a>"
   },
+
+  {
+    "question": "Monitor, Monitoring, Tickets",
+    "answer": "<br><b>Example ticket 346771</b><br><ul><li>Read Comments to identify contact person<br><li>If needed, send email to contact person and include the error in the ticket description<br><li>Add Comment that says, Monitoring <br> <li>Click Account Name/Service and view history to see what other techs have done to resolve issue<br><li>Email could be, Hi Client, We are receiving monitoring emails from you. Please advise if assistance is required.</ul>"
+  },  
   
   {
     "question": "Wanderguard Auto Assignment ",

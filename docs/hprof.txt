@@ -1,0 +1,10 @@
+
+Delete .href files if MV directory is too large.
+
+1. Go to File Manager
+
+2. Search *.hprof in root dir (D) or (E)
+
+3. Look for D:\Program Files\AeroScout\MobileView-backup .....
+
+4. Delete .hprof files

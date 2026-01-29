@@ -6,6 +6,11 @@
   },
 
   {
+    "question": "href, mobileview, space, clear, files",
+    "answer": "<br><a href=\"/docs/hprof.txt\" target=\"_blank\">📄 Delete .hprof files</a>"
+  },  
+
+  {
     "question": "Contacts, Contact",
     "answer": "<br><a href=\"/docs/contacts.txt\" target=\"_blank\">📄 Contacts</a>"
   },  

@@ -6,7 +6,7 @@
   },
 
   {
-    "question": "href, mobileview, space, clear, files",
+    "question": "hprof, mobileview, space, clear, files",
     "answer": "<br><a href=\"/docs/hprof.txt\" target=\"_blank\">📄 Delete .hprof files</a>"
   },  
 
